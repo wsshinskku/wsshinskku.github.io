@@ -71,7 +71,7 @@ Email: **swsda95@skku.edu**, **swsda95@naver.com**, swsda95@gmail.com (Rarely Us
 ### Programming & Tools
 - **Languages:** Python, C++  
 - **Frameworks:** PyTorch, Scikit-learn, TensorFlow  
-- **Simulation Tools:** UERANSIM, Open5GS, ns-3, Quadriga  
+- **Simulation Tools:** UERANSIM, Open5GS, ns-3, Quadriga, OMNeT++
 
 ---
 
