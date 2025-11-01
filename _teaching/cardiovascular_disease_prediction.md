@@ -78,6 +78,7 @@ receive higher importance during early training, accelerating convergence.
 ---
 
 ### Results
+
 | Model | Accuracy | F1-Score |
 |:------|:----------:|:--------:|
 | Logistic Regression (baseline) | 79.0% | 74.8% |
@@ -154,6 +155,7 @@ RFECV로 도출된 변수 중요도에 따라 초기 가중치를 설정하여,
 ---
 
 ### 실험 결과
+
 | 모델 | 정확도 | F1 점수 |
 |:------|:------:|:------:|
 | 기본 로지스틱 회귀 | 79.0% | 74.8% |
