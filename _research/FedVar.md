@@ -10,7 +10,7 @@ mathjax: true
 
 ## Overview  
 Shin, W., & Shin, J. (2022, July). *FedVar: Federated Learning Algorithm with Weight Variation in Clients.*  
-In *2022 37th International Technical Conference on Circuits/Systems, Computers and Communications (ITC-CSCC)* (pp. 1-4). IEEE. :contentReference[oaicite:1]{index=1}  
+In *2022 37th International Technical Conference on Circuits/Systems, Computers and Communications (ITC-CSCC)* (pp. 1-4). IEEE.
 <br>  
 This paper proposes **FedVar**, a federated learning algorithm designed to handle client-side heterogeneity (non-IID data across clients) by introducing a weighting mechanism based on each client’s model parameter variation (standard deviation of local updates). Experimental results show that FedVar improves convergence and accuracy compared to baseline methods such as FedAvg and SCAFFOLD.  
 
