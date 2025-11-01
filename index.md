@@ -7,7 +7,7 @@ sidebar:
 ---
 
 ## About Me  
-Hello! I’m **Wooseok Daniel Shin (신우석)**, a Ph.D. Candidate in the Department of Electrical and Computer Engineering at **Sungkyunkwan University (SKKU)**, advised by Prof. **Jitae Shin**.  
+Hello! I’m **Wooseok Daniel Shin (신우석)**, a Ph.D. Candidate in Media System Lab, the Department of Electrical and Computer Engineering at **Sungkyunkwan University (SKKU)**, advised by Prof. **Jitae Shin**.  
 My research focuses on **AI-enabled 5G/6G Open RAN**—specifically federated learning, intent-driven reinforcement learning, and graph-based dynamic clustering for intelligent radio resource management.
 
 I design frameworks that bridge **network intelligence and user personalization**, including:
@@ -20,7 +20,7 @@ Beyond research, I serve as **Lead Instructor at TEdI/HelloAlgo** and **Science 
 ---
 
 ## 소개  
-안녕하세요. 저는 **성균관대학교 전자전기컴퓨터공학과 박사과정 신우석**입니다.  
+안녕하세요. 저는 **성균관대학교 전자전기컴퓨터공학과 미디어 시스템 연구실 박사과정 신우석**입니다.  
 지도교수는 **신지태 교수님**이며, 제 연구 분야는 **AI 기반 5G/6G Open RAN**에서의 **연합학습(Federated Learning)**, **인텐트 기반 강화학습(Intent-based Reinforcement Learning)**, 그리고 **그래프 기반 동적 클러스터링(graph-based dynamic clustering)** 입니다.
 
 저는 네트워크 지능과 사용자 맞춤형 학습을 결합하는 다양한 프레임워크를 설계하고 있습니다:
