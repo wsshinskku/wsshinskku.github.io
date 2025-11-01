@@ -1,4 +1,3 @@
-
 ---
 layout: collection
 title: "Projects"
