@@ -6,11 +6,10 @@ sidebar:
   nav: "main"
 ---
 
-# **Wooseok Daniel Shin**
-![profile](/assets/img/profile.jpg){: width="180" .align-left}
+# **WOOSEOK SHIN**
 Ph.D. Candidate, Department of Electrical and Computer Engineering  
 **Sungkyunkwan University (SKKU)**, Suwon, Korea  
-Email: **swsda95@naver.com**, **swsda95@skku.edu**, swsda95@gmail.com (rarely used)
+Email: wooseok.shin@skku.edu  
 
 ---
 
@@ -18,9 +17,9 @@ Email: **swsda95@naver.com**, **swsda95@skku.edu**, swsda95@gmail.com (rarely us
 
 | Period | Institution | Details |
 |:------|:-------------|:--------|
-| **Mar. 2011 – Feb. 2013** | **Gyeongnam Science High School**, Korea | Early Graduation (조기졸업)  <br> Specialized Curriculum for Science, especially on Mathematics and Physics  <br> *Equivalent to High School Diploma with early completion* |
-| **Mar. 2013 – Aug. 2017** | **Sungkyunkwan University**, Suwon, Korea | Department of Semiconductor Systems Engineering  <br> **Thesis:** *Analysis of Vehicle-to-Vehicle Communication Protocols for Smart Car Services*  <br> *Advisor:* Ikjun Yeom  <br> **B.S. in Semiconductor Systems Engineering**  <br> GPA: **3.03 / 4.5** |
-| **Sep. 2017 – Present** | **Sungkyunkwan University**, Suwon, Korea | Department of Electronic Electrical Computer Engineering  <br> **Thesis:** *Advanced Machine Learning Technique for Intent-Based Resource Control in 5G Open RAN*  <br> *Advisor:* Jitae Shin  <br> **Ph.D. Student**  <br> GPA: **3.94 / 4.5** |
+| **Mar. 2011 – Feb. 2013** | **Gyeongnam Science High School**, Korea | Early Graduation (조기졸업)  <br> Specialized Curriculum for Science and Engineering |
+| **Mar. 2013 – Aug. 2017** | **Sungkyunkwan University**, Suwon, Korea | Department of Semiconductor Systems Engineering  <br> **Thesis:** *Analysis of Vehicle-to-Vehicle Communication Protocols for Smart Car Services*  <br> *Advisor:* Ikjun Yeom  <br> **B.S. in Semiconductor Systems Engineering**  <br> GPA: **3.53 / 4.5** |
+| **Sep. 2017 – Present** | **Sungkyunkwan University**, Suwon, Korea | Department of Electronic Electrical Computer Engineering  <br> **Thesis:** *Advanced Machine Learning Technique for Intent-Based Resource Control in 5G Open RAN*  <br> *Advisor:* Jitae Shin  <br> **Ph.D. Student**  <br> GPA: **4.03 / 4.5** |
 
 ---
 
@@ -37,7 +36,7 @@ Email: **swsda95@naver.com**, **swsda95@skku.edu**, swsda95@gmail.com (rarely us
 
 - **Senior Researcher**, *Media System Laboratory, Department of ECE, SKKU*  
   *Aug. 2021 – Present*  
-  AI-enabled 5G Open RAN, Federated Learning  
+  AI with 5G Open RAN, Federated Learning  
 
 - **Senior Researcher**, *Flowedu, Korea*  
   *Jul. 2020 – Jul. 2021*  
@@ -46,6 +45,13 @@ Email: **swsda95@naver.com**, **swsda95@skku.edu**, swsda95@gmail.com (rarely us
 - **Researcher**, *Computer Network Laboratory, Department of Software, SKKU*  
   *Mar. 2017 – Jul. 2020*  
   Vehicle Networks  
+
+- **Research Intern**, *Samsung Electronics (Xi’an Semiconductor Plant, China)*  
+  *Jul. 2016 – Aug. 2016*  
+  Participated in the 3rd-Grade Open Recruitment Internship Program at Samsung Semiconductor China.  
+  Conducted **yield data analysis and fault pattern tracking** for DRAM production lines using internal automation tools.  
+  Collaborated with process engineers to enhance data pipelines for manufacturing diagnostics and implemented  
+  preliminary **machine-learning-based wafer defect classification** using statistical process control data.
 
 ---
 
@@ -66,7 +72,7 @@ Email: **swsda95@naver.com**, **swsda95@skku.edu**, swsda95@gmail.com (rarely us
 ### Programming & Tools
 - **Languages:** Python, C++  
 - **Frameworks:** PyTorch, Scikit-learn, TensorFlow  
-- **Simulation Tools:** UERANSIM, Open5GS, ns-3, Quadriga, OMNeT++
+- **Simulation Tools:** UERANSIM, Open5GS, ns-3, Quadriga  
 
 ---
 
