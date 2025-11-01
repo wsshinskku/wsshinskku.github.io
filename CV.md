@@ -7,7 +7,7 @@ sidebar:
 ---
 
 # **WOOSEOK SHIN**
-![profile](/assets/img/profile.jpg){: width="160" .align-left}
+![profile](/assets/img/profile.jpg){: width="30" .align-left}
 Ph.D. Candidate, Department of Electrical and Computer Engineering  
 **Sungkyunkwan University (SKKU)**, Suwon, Korea  
 Email: **swsda95@naver.com**, **swsda95@skku.edu**, swsda95@gmail.com (rarely used)
