@@ -19,7 +19,7 @@ By fusing these complementary features, the system achieves higher accuracy and 
 
 ### Model Architecture
 
-<img src="/assets/img/teaching/thrombus_model.png" alt="Multimodal CNN Architecture for Thrombus Prediction" width="700"/>
+<img src="/assets/img/thrombus_model.png" alt="Multimodal CNN Architecture for Thrombus Prediction" width="700"/>
 
 <p align="center"><i>Figure 1. The proposed multimodal CNN architecture combining 1D, 2D, and Doppler ultrasound features.</i></p>
 
@@ -37,11 +37,13 @@ A specialized 2D CNN learns dynamic flow patterns linked to clot stiffness.
 
 #### Fusion Layer
 Feature vectors from all modalities are concatenated:
+
 $$
 \mathbf{F_{fusion}} = \text{Concat}(F_{1D}, F_{2D_{FFT}}, F_{2D_{Doppler}})
 $$
 
 Outputs:
+
 $$
 \hat{y}_{thickness} = \text{Softmax}(W_c \cdot \mathbf{F_{fusion}} + b_c), \quad
 \hat{y}_{elasticity} = W_r \cdot \mathbf{F_{fusion}} + b_r
@@ -51,7 +53,7 @@ $$
 
 ### Pseudocode
 
-<img src="/assets/img/teaching/thrombus_algorithm.png" alt="Algorithm 1: Multimodal CNN for Thrombus Prediction" width="700"/>
+<img src="/assets/img/thrombus_algorithm.png" alt="Algorithm 1: Multimodal CNN for Thrombus Prediction" width="700"/>
 
 <p align="center"><i>Figure 2. Pseudocode outlining data preprocessing, feature extraction, fusion, and final prediction.</i></p>
 
@@ -63,7 +65,7 @@ $$
 - **Transforms:** FFT for 1D → 2D conversion; STFT for Doppler.  
 - **Training Details:**  
   - 1D CNN (4 layers), 2D CNN (3 layers × 2 branches), Fully Connected Fusion.  
-  - Optimizer: Adam (lr = 1e-4), BatchNorm + Dropout.  
+  - Optimizer: Adam (lr = $1 \times 10^{-4}$), BatchNorm + Dropout.  
 - **Evaluation Metrics:**  
   - *Classification:* Accuracy & F1-score for thrombus thickness.  
   - *Regression:* RMSE for elasticity prediction.
@@ -145,6 +147,7 @@ These distinctions recognize the study’s contribution to biomedical AI and its
 이는 향후 **AI 기반 심혈관 질환 조기 진단** 및 **비침습 의료영상 분석 시스템**으로의 확장 가능성을 제시합니다.
 
 ---
+
 ### 수상 내역
 🥈 **2025년 KSEF Senior APB 국내 부문 은상**  
 🥈 **2025년 KSEF Senior APB 국제 부문 은상**
