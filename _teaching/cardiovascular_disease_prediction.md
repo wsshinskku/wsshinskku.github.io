@@ -128,8 +128,8 @@ The proposed approach outperformed both baseline and RFECV-only models, demonstr
 
 <h3>Awards</h3>
 <p>
-🏅 <b>KSEF 2025 Domestic Junior BIO – Gold Medal</b><br>
-🥈 <b>KSEF 2025 Inter Junior BIO – Silver Medal</b>
+🏅 <b>KSEF 2025 Junior BIO – Domestic Gold Medal</b><br>
+🥈 <b>KSEF 2025 Junior BIO – Inter Silver Medal</b>
 </p>
 
 <p>
@@ -239,8 +239,8 @@ RFECV로 도출된 변수 중요도에 따라 초기 가중치를 설정하여,
 
 <h3>수상 내역</h3>
 <p>
-🏅 <b>2025년 KSEF 국내 주니어 BIO 부문 금상</b><br>
-🥈 <b>2025년 KSEF 국제 주니어 BIO 부문 은상</b>
+🏅 <b>2025년 KSEF Senior BIO 국내 부문 금상</b><br>
+🥈 <b>2025년 KSEF Senior BIO 국제 부문 은상</b>
 </p>
 
 <p>
