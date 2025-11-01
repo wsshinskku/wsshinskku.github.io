@@ -1,0 +1,153 @@
+---
+title: "Multimodal Deep Learning Model for Predicting Thrombus Thickness and Elasticity Using Ultrasound Imaging"
+date: 2025-11-01
+layout: single
+categories: teaching
+sidebar:
+  nav: "main"
+mathjax: true
+---
+
+## English
+
+### Overview
+This study proposes a **multimodal deep learning model** that predicts **thrombus thickness** and **elasticity** using ultrasound imaging.  
+The model integrates three distinct modalities — **1D LGFU signals**, **2D frequency-domain spectra**, and **Doppler ultrasound data** — to capture spatial, temporal, and flow-based information about blood clots.  
+By fusing these complementary features, the system achieves higher accuracy and robustness than single-modality baselines.
+
+---
+
+### Model Architecture
+
+<img src="/assets/img/teaching/thrombus_model.png" alt="Multimodal CNN Architecture for Thrombus Prediction" width="700"/>
+
+<p align="center"><i>Figure 1. The proposed multimodal CNN architecture combining 1D, 2D, and Doppler ultrasound features.</i></p>
+
+#### 1D LGFU Signal (Temporal Feature)
+Laser-generated focused ultrasound (LGFU) signals capture reflected time-domain patterns corresponding to micro-level tissue changes.  
+Processed through a 1D CNN (4 convolutional layers, ReLU, Average Pooling).
+
+#### 2D Frequency-Domain Spectrum (Morphological Feature)
+A Fast Fourier Transform (FFT) converts raw LGFU signals into 2D spectral images.  
+These are processed by a 2D CNN (3 conv layers, ReLU, MaxPool) to extract spatial-frequency structures.
+
+#### Doppler Ultrasound (Flow Feature)
+Doppler spectrograms obtained from Short-Time Fourier Transform (STFT) represent flow velocity and turbulence.  
+A specialized 2D CNN learns dynamic flow patterns linked to clot stiffness.
+
+#### Fusion Layer
+Feature vectors from all modalities are concatenated:
+$$
+\mathbf{F_{fusion}} = \text{Concat}(F_{1D}, F_{2D_{FFT}}, F_{2D_{Doppler}})
+$$
+
+Outputs:
+$$
+\hat{y}_{thickness} = \text{Softmax}(W_c \cdot \mathbf{F_{fusion}} + b_c), \quad
+\hat{y}_{elasticity} = W_r \cdot \mathbf{F_{fusion}} + b_r
+$$
+
+---
+
+### Pseudocode
+
+<img src="/assets/img/teaching/thrombus_algorithm.png" alt="Algorithm 1: Multimodal CNN for Thrombus Prediction" width="700"/>
+
+<p align="center"><i>Figure 2. Pseudocode outlining data preprocessing, feature extraction, fusion, and final prediction.</i></p>
+
+---
+
+### Dataset and Simulation
+- **Data Source:** Lab-generated artificial thrombi attached to vascular phantoms (100–1000 μm thickness).  
+- **Modality Counts:** 1D LGFU, 2D FFT spectra, Doppler spectrograms.  
+- **Transforms:** FFT for 1D → 2D conversion; STFT for Doppler.  
+- **Training Details:**  
+  - 1D CNN (4 layers), 2D CNN (3 layers × 2 branches), Fully Connected Fusion.  
+  - Optimizer: Adam (lr = 1e-4), BatchNorm + Dropout.  
+- **Evaluation Metrics:**  
+  - *Classification:* Accuracy & F1-score for thrombus thickness.  
+  - *Regression:* RMSE for elasticity prediction.
+
+---
+
+### Results
+
+<table>
+  <thead>
+    <tr><th>Model</th><th>Accuracy</th><th>F1-Score</th><th>RMSE (kPa)</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>1D LGFU Only</td><td>0.781</td><td>0.765</td><td>1.102</td></tr>
+    <tr><td>2D FFT Only</td><td>0.826</td><td>0.801</td><td>0.972</td></tr>
+    <tr><td>Doppler Only</td><td>0.732</td><td>0.714</td><td>0.924</td></tr>
+    <tr><td><b>Proposed Multimodal CNN</b></td><td><b>0.853</b></td><td><b>0.828</b></td><td><b>0.854</b></td></tr>
+  </tbody>
+</table>
+
+<p>
+The multimodal CNN achieved the best performance across both classification and regression tasks, confirming that integrating temporal, spatial, and hemodynamic modalities substantially improves predictive power.
+</p>
+
+---
+
+### Conclusion
+This multimodal CNN framework provides a comprehensive understanding of thrombus properties by combining LGFU, FFT, and Doppler ultrasound data.  
+The integration of multiple modalities enables more precise and interpretable predictions of **thrombus thickness** and **elasticity**, offering potential applications in **non-invasive cardiovascular diagnostics** and **AI-driven medical imaging**.
+
+---
+
+### Awards
+🥈 **KSEF 2025 Senior APB – Domestic Silver Medal**  
+🥈 **KSEF 2025 Senior APB – Inter Silver Medal**
+
+These distinctions recognize the study’s contribution to biomedical AI and its success in applying multimodal deep learning to real-world ultrasound data analysis.
+
+---
+
+## 한국어
+
+### 연구 개요
+본 연구는 초음파 영상 데이터를 이용해 **혈전(Thrombus)의 두께와 탄성(Elasticity)** 을 예측하는 **다중모달 딥러닝 모델**을 제안합니다.  
+모델은 **1D LGFU 신호**, **2D FFT 스펙트럼**, **도플러 초음파 데이터**를 결합하여,  
+시간적·공간적·혈류학적 정보를 모두 반영한 정밀한 혈전 분석을 수행합니다.
+
+---
+
+### 모델 구조
+
+<img src="/assets/img/teaching/thrombus_model.png" alt="다중모달 CNN 구조도" width="700"/>
+
+<p align="center"><i>그림 1. 1D, 2D, Doppler CNN의 융합으로 구성된 다중모달 딥러닝 아키텍처</i></p>
+
+---
+
+### 실험 및 결과
+- **데이터:** 인공 혈전 (100–1000 μm), LGFU 기반 초음파 측정  
+- **모델:** 1D CNN + 2D CNN(FFT) + 2D CNN(Doppler) → Feature Fusion → Fully Connected Layer  
+- **지표:** 정확도 (Accuracy), F1 점수, RMSE (kPa)
+
+<table>
+  <thead>
+    <tr><th>모델</th><th>정확도</th><th>F1 점수</th><th>RMSE (kPa)</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>1D LGFU 단일 모델</td><td>0.781</td><td>0.765</td><td>1.102</td></tr>
+    <tr><td>2D FFT 단일 모델</td><td>0.826</td><td>0.801</td><td>0.972</td></tr>
+    <tr><td>도플러 단일 모델</td><td>0.732</td><td>0.714</td><td>0.924</td></tr>
+    <tr><td><b>제안된 다중모달 CNN</b></td><td><b>0.853</b></td><td><b>0.828</b></td><td><b>0.854</b></td></tr>
+  </tbody>
+</table>
+
+---
+
+### 결론
+본 다중모달 CNN 모델은 LGFU, FFT, 도플러 초음파 데이터를 통합하여 혈전의 두께와 탄성을 정확히 예측할 수 있음을 보였습니다.  
+이는 향후 **AI 기반 심혈관 질환 조기 진단** 및 **비침습 의료영상 분석 시스템**으로의 확장 가능성을 제시합니다.
+
+---
+
+### 수상 내역
+🥈 **2025년 KSEF Senior APB 국내 부문 은상**  
+🥈 **2025년 KSEF Senior APB 국제 부문 은상**
+
+본 연구는 **다중모달 딥러닝과 의료영상 융합의 혁신성**으로 높은 평가를 받았습니다.
