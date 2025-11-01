@@ -1,0 +1,13 @@
+.archive__item {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.05);
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+.archive__item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+.archive__item-title a {
+  color: #005f73 !important;
+}
