@@ -9,3 +9,5 @@ sidebar:
 ---
 
 Explore ongoing research frameworks below.
+
+- **CarPe-FL:** Client-Assistant-Relay Personalized FL
