@@ -3,7 +3,7 @@ layout: collection
 title: "Projects"
 collection: projects
 permalink: /projects/
-entries_layout: grid
+entries_layout: cards
 sidebar:
   nav: "main"
 ---
