@@ -18,9 +18,8 @@
     page: "https://scholar.google.com/citations?view_op=view_citation&hl=ko&user=xm6czH8AAAAJ&citation_for_view=xm6czH8AAAAJ:u5HHmVD_uO8C"
     github: "https://github.com/wsshinskku/FedGCD"
 
-    
 - title: "TFL-CORAN: Transfer-Enhanced Federated Learning with Dynamic Clustering for 5G Open RAN"
-  venue: IEEE ICC (under review)
+  venue: "IEEE ICC (under review)"
   year: 2026
   authors:
     - Wooseok Shin
