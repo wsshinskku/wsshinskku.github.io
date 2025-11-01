@@ -8,6 +8,9 @@ locale: "ko-KR"
 
 plugins:
   - jekyll-include-cache
+markdown: kramdown
+kramdown:
+  math_engine: mathjax
 
 # === Collections (글이 쌓이는 구조) ===
 collections:
