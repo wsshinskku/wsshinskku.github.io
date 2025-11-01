@@ -6,8 +6,8 @@ sidebar:
   nav: "main"
 ---
 
-# **WOOSEOK DANIEL SHIN**
-![profile](/assets/img/profile.jpg){: width="160" .align-left}
+# **Wooseok Daniel Shin**
+![profile](/assets/img/profile.jpg){: width="180" .align-left}
 Ph.D. Candidate, Department of Electrical and Computer Engineering  
 **Sungkyunkwan University (SKKU)**, Suwon, Korea  
 Email: **swsda95@naver.com**, **swsda95@skku.edu**, swsda95@gmail.com (rarely used)
