@@ -7,7 +7,7 @@ sidebar:
 ---
 
 ## About Me  
-Hello! I’m **Wooseok Shin (신우석)**, a Ph.D. Candidate in the Department of Electrical and Computer Engineering at **Sungkyunkwan University (SKKU)**, advised by Prof. **Jitae Shin**.  
+Hello! I’m **Wooseok Daniel Shin (신우석)**, a Ph.D. Candidate in the Department of Electrical and Computer Engineering at **Sungkyunkwan University (SKKU)**, advised by Prof. **Jitae Shin**.  
 My research focuses on **AI-enabled 5G/6G Open RAN**—specifically federated learning, intent-driven reinforcement learning, and graph-based dynamic clustering for intelligent radio resource management.
 
 I design frameworks that bridge **network intelligence and user personalization**, including:
