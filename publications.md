@@ -8,26 +8,22 @@ sidebar:
 
 Below is a list of my publications, grouped by year.
 
-{% assign sorted = site.data.publications | sort: "year" | reverse %}
-{% assign years = sorted | map: "year" | uniq %}
-
-{% for y in years %}
-## {{ y }}
+{% assign pubs = site.data.publications | sort: "year" | reverse %}
 <ul>
-  {% for p in sorted %}
-    {% if p.year == y %}
-      <li>
-        <strong>{{ p.title }}</strong><br>
-        <em>{{ p.venue }}</em> ({{ p.year }})<br>
-        {{ p.authors | join: ", " }}<br>
-        {% if p.links.pdf %}[<a href="{{ p.links.pdf }}">PDF</a>]{% endif %}
-        {% if p.links.code %} [<a href="{{ p.links.code }}">Code</a>]{% endif %}
-      </li>
-      <br>
-    {% endif %}
-  {% endfor %}
-</ul>
+{% for p in pubs %}
+  <li>
+    <strong>{{ p.title }}</strong><br>
+    <em>{{ p.venue }}</em> ({{ p.year }})<br>
+    {{ p.authors | join: ", " }}<br>
+    {% if p.links.page %}[<a href="{{ p.links.page }}">Page</a>]{% endif %}
+    {% if p.links.github %} [<a href="{{ p.links.github }}">GitHub</a>]{% endif %}
+    {% if p.links.pdf %} [<a href="{{ p.links.pdf }}">PDF</a>]{% endif %}
+    {% if p.links.code %} [<a href="{{ p.links.code }}">Code</a>]{% endif %}
+  </li>
+  <br>
 {% endfor %}
+</ul>
+
 
 ---
 
