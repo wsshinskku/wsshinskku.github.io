@@ -2,16 +2,14 @@
 layout: collection
 title: "Research"
 collection: research
+entries_layout: grid
 permalink: /research/
-entries_layout: cards
 sidebar:
   nav: "main"
 ---
 
 Explore completed research frameworks below.
 
-- **FedVar:** FL via Client Weight Variation
-- **FedGCD:** FL via GNN-based Community Detection
-- **TFL-CORAN:** Transfer-Enhanced FL with Dynamic Clustering in 5G Open RAN  
-- **St-INTEL:** Stackelberg-Intent Enhanced Learning in 5G Open RAN
-- **FedHM:** Hybrid Metric-based FL for Structured Non-IID Data
+{% for post in site.research reversed %}
+  {% include research-card.html %}
+{% endfor %}
