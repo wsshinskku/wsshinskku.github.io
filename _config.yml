@@ -32,3 +32,12 @@ nav:
     url: /projects/
   - title: "Teaching"
     url: /teaching/
+
+# Sidebar navigation
+defaults:
+  - scope:
+      path: ""
+      type: pages
+    values:
+      sidebar:
+        nav: "main"
