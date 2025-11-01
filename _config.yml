@@ -1,5 +1,5 @@
 title: "Wooseok Shin"
-description: "Ph.D. Candidate @ SKKU | O-RAN, FL, GNN, RL"
+description: "Ph.D. Candidate @ SKKU | AI-enabled 5G Open RAN, Federated Learning"
 url: "https://wsshinskku.github.io"
 
 remote_theme: "mmistakes/minimal-mistakes@4.24.0"
@@ -9,11 +9,52 @@ locale: "ko-KR"
 plugins:
   - jekyll-include-cache
 
+# === Collections (글이 쌓이는 구조) ===
+collections:
+  research:
+    output: true
+    permalink: /research/:title/
+  projects:
+    output: true
+    permalink: /projects/:title/
+  teaching:
+    output: true
+    permalink: /teaching/:title/
+
+# === Sidebar Navigation ===
+defaults:
+  - scope:
+      path: ""
+      type: pages
+    values:
+      sidebar:
+        nav: "main"
+  - scope:
+      path: ""
+      type: research
+    values:
+      layout: single
+      sidebar:
+        nav: "main"
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: single
+      sidebar:
+        nav: "main"
+  - scope:
+      path: ""
+      type: teaching
+    values:
+      layout: single
+      sidebar:
+        nav: "main"
 
 author:
   name: "Wooseok Shin"
   avatar: "/assets/img/profile.jpg"
-  bio: "AI-enabled 5G Open RAN, Federated Learning, GNN, RL"
+  bio: "AI-enabled 5G Open RAN, Federated Learning"
   location: "Seoul / Suwon, KR"
   links:
     - label: "Google Scholar"
@@ -22,22 +63,3 @@ author:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/wsshinskku"
-
-nav:
-  - title: "Research"
-    url: /research/
-  - title: "Publications"
-    url: /publications/
-  - title: "Projects"
-    url: /projects/
-  - title: "Teaching"
-    url: /teaching/
-
-# Sidebar navigation
-defaults:
-  - scope:
-      path: ""
-      type: pages
-    values:
-      sidebar:
-        nav: "main"
