@@ -1,10 +1,14 @@
 ---
-layout: single
+layout: collection
 title: "Research"
+collection: research
 permalink: /research/
+entries_layout: grid
 sidebar:
   nav: "main"
 ---
+
+Explore ongoing and completed research frameworks below.
 
 - **FedVar:** FL via Client Weight Variation
 - **FedGCD:** FL via GNN-based Community Detection
