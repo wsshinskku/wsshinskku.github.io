@@ -10,7 +10,9 @@ plugins:
   - jekyll-include-cache
 markdown: kramdown
 kramdown:
+  input: GFM
   math_engine: mathjax
+
 
 # === Collections (글이 쌓이는 구조) ===
 collections:
