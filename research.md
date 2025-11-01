@@ -3,7 +3,7 @@ layout: collection
 title: "Research"
 collection: research
 permalink: /research/
-entries_layout: grid
+entries_layout: cards
 sidebar:
   nav: "main"
 ---
