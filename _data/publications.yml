@@ -1,3 +1,20 @@
+- title: FedVar: Federated learning algorithm with weight variation in clients
+  venue: IEEE ITC-CSCC
+  year: 2022
+  authors: [Wooseok Shin,Jitae Shin]
+  links:
+    pdf: "#"
+    code: "https://github.com/username/FedVar"
+
+- title: FedGCD: Federated Learning Algorithm with GNN based Community Detection for Heterogeneous Data
+  venue: JICS (KCI Journal)
+  year: 2023
+  authors: [Wooseok Shin,Jitae Shin]
+  links:
+    pdf: "#"
+    code: "https://github.com/username/FedGCD"
+
+    
 - title: TFL-CORAN: Transfer-Enhanced Federated Learning with Dynamic Clustering for 5G Open RAN
   venue: IEEE ICC (under review)
   year: 2026
