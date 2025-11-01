@@ -15,7 +15,7 @@ I design frameworks that bridge **network intelligence and user personalization*
 - **St-INTEL**: Stackelberg-Intent Enhanced Learning for Multi-vendor RANs  
 - **CarPe-FL**: Client–Assistant–Relay Personalized Federated Learning
 
-Beyond research, I serve as **Lead Instructor at TEdI/HelloAlgo** and **Science Fair Director at IvyZen**, mentoring students on the Korean Olympiad in Informatics (KOI), the USA Computing Olympiad (USACO), and AP Computer Science A, and I mentor a variety of interdisciplinary AI projects spanning communication systems, environmental modeling, integrated AI environments, and AI-driven arts.
+Beyond research, I serve as **Lead Instructor at TEdI/HelloAlgo** and **Science Fair Director at IvyZen**, mentoring students on the Korean Olympiad in Informatics (KOI), the USA Computing Olympiad (USACO), and AP Computer Science A, and I mentor a variety of interdisciplinary AI projects spanning communication systems, environmental modeling, integrated Bioinformatics, and AI-driven arts.
 
 ---
 
@@ -29,4 +29,4 @@ Beyond research, I serve as **Lead Instructor at TEdI/HelloAlgo** and **Science 
 - **CarPe-FL**: 클라이언트–어시스턴트–릴레이 구조의 개인화 연합학습  
 
 또한 **TEdI/HelloAlgo 메인 강사** 및 **IvyZen Science Fair Director**로서,  
-한국정보올림피아드(KOI), 미국컴퓨팅올림피아드(USACO), AP Computer Science A 과목 등의 수업을 진행중이며 통신 시스템, 환경 모델링, 인공지능 통합 환경 및 예술 관련 등 다양한 융합 AI 프로젝트를 지도하고 있습니다.
+한국정보올림피아드(KOI), 미국컴퓨팅올림피아드(USACO), AP Computer Science A 과목 등의 수업을 진행중이며 통신 시스템, 환경 모델링, 바이오인포매틱스 및 예술 관련 등 다양한 융합 AI 프로젝트를 지도하고 있습니다.
