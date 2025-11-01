@@ -37,7 +37,7 @@ Email: **swsda95@naver.com**, **swsda95@skku.edu**, swsda95@gmail.com (rarely us
 
 - **Senior Researcher**, *Media System Laboratory, Department of ECE, SKKU*  
   *Aug. 2021 – Present*  
-  AI with 5G Open RAN, Federated Learning  
+  AI-enabled 5G Open RAN, Federated Learning  
 
 - **Senior Researcher**, *Flowedu, Korea*  
   *Jul. 2020 – Jul. 2021*  
