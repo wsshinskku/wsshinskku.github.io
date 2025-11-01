@@ -1,9 +1,11 @@
 title: "Wooseok Shin"
-description: "Ph.D. Candidate @ SKKU | AI-enabled 5G Open RAN, Federated Learning, GNN, RL"
+description: "Ph.D. Candidate @ SKKU | O-RAN, FL, GNN, RL"
 url: "https://wsshinskku.github.io"
-remote_theme: "mmistakes/minimal-mistakes"
+
+remote_theme: "mmistakes/minimal-mistakes@4.24.0"
 minimal_mistakes_skin: default
 locale: "ko-KR"
+
 plugins:
   - jekyll-include-cache
 
