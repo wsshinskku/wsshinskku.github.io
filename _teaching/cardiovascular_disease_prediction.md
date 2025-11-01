@@ -1,5 +1,8 @@
 ---
 title: "A Logistic Regression Approach for Cardiovascular Disease Prediction"
+excerpt: "Logistic regression and RFECV-based model for cardiovascular disease prediction."
+header:
+  image: /assets/img/teaching/cvd-thumbnail.jpg
 date: 2025-11-01
 layout: single
 categories: teaching
@@ -7,6 +10,7 @@ sidebar:
   nav: "main"
 mathjax: true
 ---
+
 
 <h2>English</h2>
 
