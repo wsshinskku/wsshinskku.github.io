@@ -23,7 +23,7 @@ By fusing these complementary features, the system achieves higher accuracy and 
 
 ### Model Architecture
 
-<img src="/assets/img/thrombus_model.png" alt="Multimodal CNN Architecture for Thrombus Prediction" width="700"/>
+<img src="/assets/img/teaching/thrombus_model.png" alt="Multimodal CNN Architecture for Thrombus Prediction" width="700"/>
 
 <p align="center"><i>Figure 1. The proposed multimodal CNN architecture combining 1D, 2D, and Doppler ultrasound features.</i></p>
 
@@ -57,7 +57,7 @@ $$
 
 ### Pseudocode
 
-<img src="/assets/img/thrombus_algorithm.png" alt="Algorithm 1: Multimodal CNN for Thrombus Prediction" width="700"/>
+<img src="/assets/img/teaching/thrombus_algorithm.png" alt="Algorithm 1: Multimodal CNN for Thrombus Prediction" width="700"/>
 
 <p align="center"><i>Figure 2. Pseudocode outlining data preprocessing, feature extraction, fusion, and final prediction.</i></p>
 
