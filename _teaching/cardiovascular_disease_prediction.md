@@ -20,38 +20,39 @@ Cardiovascular disease remains one of the most critical global health concerns, 
 ### Mathematical Formulation
 
 #### Logistic Regression Model
-The model predicts the probability \\( P(y = 1 \mid \mathbf{x}) \\) that a patient has cardiovascular disease given features \\( \mathbf{x} = (x_1, x_2, \ldots, x_n) \\).
+The model predicts the probability \( P(y = 1 \mid \mathbf{x}) \) that a patient has cardiovascular disease given features \( \mathbf{x} = (x_1, x_2, \ldots, x_n) \).
 
-\[
+$$
 z = \omega_1 x_1 + \omega_2 x_2 + \cdots + \omega_n x_n + b
-\]
+$$
 
-\[
+$$
 P(y = 1 \mid \mathbf{x}) = \sigma(z) = \frac{1}{1 + e^{-z}}
-\]
+$$
 
 where:
-- \\( \omega_i \\): weight of each feature  
-- \\( b \\): bias term  
-- \\( \sigma(z) \\): sigmoid (logistic) activation function
+
+- \( \omega_i \): weight of each feature  
+- \( b \): bias term  
+- \( \sigma(z) \): sigmoid (logistic) activation function
 
 ---
 
 #### Cost Function and Optimization
 The cost function is defined by binary cross-entropy:
 
-\[
+$$
 J(\omega, b) = -\frac{1}{m} \sum_{i=1}^{m} \Big[ y^{(i)} \log(\hat{y}^{(i)}) + (1 - y^{(i)}) \log(1 - \hat{y}^{(i)}) \Big]
-\]
+$$
 
 Model parameters are updated via **gradient descent**:
 
-\[
+$$
 \omega_j := \omega_j - \alpha \frac{\partial J}{\partial \omega_j}, \quad
 b := b - \alpha \frac{\partial J}{\partial b}
-\]
+$$
 
-where \\( \alpha \\) is the learning rate.
+where \( \alpha \) is the learning rate.
 
 ---
 
@@ -59,11 +60,11 @@ where \\( \alpha \\) is the learning rate.
 RFECV ranks each feature’s predictive power.  
 The initial weights are set inversely proportional to the ranking:
 
-\[
+$$
 \omega_j^{(0)} = \frac{1}{\text{RFECVrank}(x_j)}
-\]
+$$
 
-This ensures that the most critical clinical features (e.g., age, blood pressure, cholesterol)  
+This ensures that the most critical clinical features (e.g., age, blood pressure, cholesterol)
 receive higher importance during early training, accelerating convergence.
 
 ---
@@ -71,7 +72,7 @@ receive higher importance during early training, accelerating convergence.
 ### Dataset and Experiment
 - **Dataset:** UCI Heart Disease Dataset (303 samples, 13 features)  
 - **Cross-Validation:** 5-Fold  
-- **Optimization:** Gradient Descent (\\( \alpha = 0.01 \\))  
+- **Optimization:** Gradient Descent (\( \alpha = 0.01 \))  
 - **Evaluation Metrics:** Accuracy, F1-Score
 
 ---
@@ -83,7 +84,7 @@ receive higher importance during early training, accelerating convergence.
 | RFECV-only Logistic Regression | 84.2% | 84.6% |
 | **Proposed (RFECV + Weight Init.)** | **87.5%** | **87.4%** |
 
-The proposed approach outperformed both baseline and RFECV-only models,  
+The proposed approach outperformed both baseline and RFECV-only models,
 demonstrating a strong balance between precision and generalization.
 
 ---
@@ -115,36 +116,38 @@ Its structure provides a reproducible example for AI-driven medical research edu
 
 ### 수학적 정의
 
-\[
+$$
 z = \omega_1 x_1 + \omega_2 x_2 + \cdots + \omega_n x_n + b
-\]
-\[
-P(y = 1 \mid \mathbf{x}) = \frac{1}{1 + e^{-z}}
-\]
+$$
 
-- \\( \omega_i \\): 각 특성(feature)의 가중치  
-- \\( b \\): 편향(bias)  
-- \\( P(y=1|\mathbf{x}) \\): 질병이 존재할 확률
+$$
+P(y = 1 \mid \mathbf{x}) = \frac{1}{1 + e^{-z}}
+$$
+
+- \( \omega_i \): 각 특성(feature)의 가중치  
+- \( b \): 편향(bias)  
+- \( P(y=1 \mid \mathbf{x}) \): 질병이 존재할 확률  
 
 모델 학습은 **이진 교차 엔트로피 손실함수(Binary Cross-Entropy Loss)** 를 최소화하는 방향으로 진행됩니다.
 
-\[
+$$
 J(\omega, b) = -\frac{1}{m} \sum_{i=1}^{m} [ y^{(i)} \log(\hat{y}^{(i)}) + (1 - y^{(i)}) \log(1 - \hat{y}^{(i)}) ]
-\]
+$$
 
 경사하강법(Gradient Descent)을 통해 매개변수는 다음과 같이 업데이트됩니다.
 
-\[
+$$
 \omega_j := \omega_j - \alpha \frac{\partial J}{\partial \omega_j}, \quad
 b := b - \alpha \frac{\partial J}{\partial b}
-\]
+$$
 
 ---
 
 ### RFECV 기반 가중치 초기화
-\[
+$$
 \omega_j^{(0)} = \frac{1}{\text{RFECVrank}(x_j)}
-\]
+$$
+
 RFECV로 도출된 변수 중요도에 따라 초기 가중치를 설정하여,  
 중요한 특성(나이, 혈압, 콜레스테롤 등)에 더 빠르게 수렴하도록 유도합니다.
 
