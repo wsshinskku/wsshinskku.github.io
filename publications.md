@@ -1,4 +1,4 @@
---
+---
 layout: single
 title: "Publications"
 permalink: /publications/
@@ -20,8 +20,12 @@ Below is a list of my publications, grouped by year.
         <strong>{{ p.title }}</strong><br>
         <em>{{ p.venue }}</em> ({{ p.year }})<br>
         {{ p.authors | join: ", " }}<br>
-        {% if p.links.page %}[<a href="{{ p.links.page }}">PAGE</a>]{% endif %}
-        {% if p.links.github %} [<a href="{{ p.links.github }}">GITHUB</a>]{% endif %}
+        {% if p.links.page %}
+          [<a href="{{ p.links.page }}" target="_blank">PAGE</a>]
+        {% endif %}
+        {% if p.links.github %}
+          [<a href="{{ p.links.github }}" target="_blank">GITHUB</a>]
+        {% endif %}
       </li>
       <br>
     {% endif %}
