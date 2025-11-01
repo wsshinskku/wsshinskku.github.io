@@ -1,0 +1,29 @@
+title: "Wooseok Shin"
+description: "Ph.D. Candidate @ MSL, SKKU | AI-enabled 5G Open RAN, Federated Learning, GNN, RL"
+url: "https://wsshinskku.github.io"
+theme: minimal-mistakes-jekyll
+minimal_mistakes_skin: default
+locale: "ko-KR"
+
+author:
+  name: "Wooseok Shin"
+  avatar: "/assets/img/profile.jpg"
+  bio: "AI-enabled 5G Open RAN, Federated Learning, GNN, RL"
+  location: "Seoul / Suwon, KR"
+  links:
+    - label: "Google Scholar"
+      icon: "fas fa-fw fa-graduation-cap"
+      url: "https://scholar.google.com/citations?user=xm6czH8AAAAJ&hl=ko"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/wsshinskku"
+
+nav:
+  - title: "Research"
+    url: /research/
+  - title: "Publications"
+    url: /publications/
+  - title: "Projects"
+    url: /projects/
+  - title: "Teaching"
+    url: /teaching/
