@@ -2,8 +2,8 @@
 layout: collection
 title: "Teaching"
 collection: teaching
+entries_layout: cards
 permalink: /teaching/
-entries_layout: grid
 sidebar:
   nav: "main"
 ---
