@@ -18,7 +18,7 @@ Email: **swsda95@skku.edu**, **swsda95@naver.com**, swsda95@gmail.com (Rarely Us
 
 | Period | Institution | Details |
 |:------|:-------------|:--------|
-| **Mar. 2011 – Feb. 2013** | **Gyeongnam Science High School**, Korea | Early Graduation (조기졸업)  <br> Specialized Curriculum for Science and Engineering |
+| **Mar. 2011 – Feb. 2013** | **Gyeongnam Science High School**, Korea | Early Graduation (조기졸업)  <br> Specialized Curriculum for Science, Especially on Mathematics and Physics |
 | **Mar. 2013 – Aug. 2017** | **Sungkyunkwan University**, Suwon, Korea | Department of Semiconductor Systems Engineering  <br> **Thesis:** *Analysis of Vehicle-to-Vehicle Communication Protocols for Smart Car Services*  <br> *Advisor:* Ikjun Yeom  <br> **B.S. in Semiconductor Systems Engineering**  <br> GPA: **3.03 / 4.5** |
 | **Sep. 2017 – Present** | **Sungkyunkwan University**, Suwon, Korea | Department of Electronic Electrical Computer Engineering  <br> **Thesis:** *Advanced Machine Learning Technique for Intent-Based Resource Control in 5G Open RAN*  <br> *Advisor:* Jitae Shin  <br> **Ph.D. Student**  <br> GPA: **3.94 / 4.5** |
 
