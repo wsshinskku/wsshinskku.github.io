@@ -1,14 +1,22 @@
-<!-- MathJax for LaTeX Rendering -->
+<!-- Force-load MathJax 3 for Minimal Mistakes -->
 <script>
   window.MathJax = {
     tex: {
       inlineMath: [['$', '$'], ['\\(', '\\)']],
       displayMath: [['$$', '$$'], ['\\[', '\\]']],
-      processEscapes: true
+      processEscapes: true,
+      processEnvironments: true
     },
     options: {
-      ignoreHtmlClass: 'tex2jax_ignore',
-      processHtmlClass: 'tex2jax_process'
+      skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    },
+    startup: {
+      pageReady: () => {
+        // Re-render after Jekyll anchors load
+        return MathJax.startup.defaultPageReady().then(() => {
+          MathJax.typesetPromise();
+        });
+      }
     }
   };
 </script>
