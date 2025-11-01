@@ -121,7 +121,7 @@ These distinctions recognize the study’s contribution to biomedical AI and its
 
 ### 모델 구조
 
-<img src="/assets/img/teaching/thrombus_model.png" alt="다중모달 CNN 구조도" width="700"/>
+<img src="/assets/img/thrombus_model.png" alt="다중모달 CNN 구조도" width="700"/>
 
 <p align="center"><i>그림 1. 1D, 2D, Doppler CNN의 융합으로 구성된 다중모달 딥러닝 아키텍처</i></p>
 
