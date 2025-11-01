@@ -20,8 +20,8 @@ Below is a list of my publications, grouped by year.
         <strong>{{ p.title }}</strong><br>
         <em>{{ p.venue }}</em> ({{ p.year }})<br>
         {{ p.authors | join: ", " }}<br>
-        {% if p.links.page %}[<a href="{{ p.links.page }}">PDF</a>]{% endif %}
-        {% if p.links.github %} [<a href="{{ p.links.github }}">Code</a>]{% endif %}
+        {% if p.links.page %}[<a href="{{ p.links.page }}">PAGE</a>]{% endif %}
+        {% if p.links.github %} [<a href="{{ p.links.github }}">GITHUB</a>]{% endif %}
       </li>
       <br>
     {% endif %}
