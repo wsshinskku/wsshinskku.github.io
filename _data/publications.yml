@@ -5,8 +5,8 @@
     - Wooseok Shin
     - Jitae Shin
   links:
-    pdf: "#"
-    code: "https://github.com/username/FedVar"
+    page: "https://ieeexplore.ieee.org/abstract/document/9894899"
+    github: "https://github.com/wsshinskku/FedVar"
 
 - title: "FedGCD: Federated Learning Algorithm with GNN based Community Detection for Heterogeneous Data"
   venue: "JICS (KCI Journal)"
@@ -15,8 +15,8 @@
     - Wooseok Shin
     - Jitae Shin
   links:
-    pdf: "#"
-    code: "https://github.com/username/FedGCD"
+    page: "https://scholar.google.com/citations?view_op=view_citation&hl=ko&user=xm6czH8AAAAJ&citation_for_view=xm6czH8AAAAJ:u5HHmVD_uO8C"
+    github: "https://github.com/wsshinskku/FedGCD"
 
     
 - title: "TFL-CORAN: Transfer-Enhanced Federated Learning with Dynamic Clustering for 5G Open RAN"
@@ -29,5 +29,5 @@
     - Miseok Choi
     - Jitae Shin
   links:
-    pdf: "#"
-    code: "#"
+    page: "#"
+    github: "#"
