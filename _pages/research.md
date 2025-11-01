@@ -1,7 +1,9 @@
 ---
 layout: single
-title: Research
+title: "Research"
 permalink: /research/
+sidebar:
+  nav: "main"
 ---
 
 - **FedVar:** FL via Client Weight Variation
