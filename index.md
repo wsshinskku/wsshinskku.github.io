@@ -21,7 +21,7 @@ Beyond research, I serve as **Lead Instructor at TEdI/HelloAlgo** and **Science 
 
 ## 소개  
 안녕하세요. 저는 **성균관대학교 전자전기컴퓨터공학과 박사과정 신우석**입니다.  
-지도교수는 **신지태 교수님**이며, 제 연구 분야는 **AI 기반 5G/6G Open RAN**에서의 **연합학습(Federated Learning)**, **인텐트 기반 강화학습(Intent-based Reinforcement Learning)**, 그리고 **그래프 동적 클러스터링(Graph-based Dynamic Clustering)**을 통한 지능형 무선 자원 관리입니다.
+지도교수는 **신지태 교수님**이며, 제 연구 분야는 **AI 기반 5G/6G Open RAN**에서의 **연합학습(Federated Learning)**, **인텐트 기반 강화학습(Intent-based Reinforcement Learning)**, 그리고 **그래프 기반 동적 클러스터링(graph-based dynamic clustering)** 입니다.
 
 저는 네트워크 지능과 사용자 맞춤형 학습을 결합하는 다양한 프레임워크를 설계하고 있습니다:
 - **TFL-CORAN**: 전이학습 기반의 연합학습과 동적 클러스터링 결합  
