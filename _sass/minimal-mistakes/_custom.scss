@@ -28,11 +28,14 @@
 .btn--primary {
   background-color: #005f73;
   color: #fff !important;
-  border-radius: 5px;
-  padding: 0.3rem 0.8rem;
-  text-transform: none;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  font-size: 0.95rem;
+  display: inline-block;
+  transition: all 0.2s ease;
 }
-
 .btn--primary:hover {
   background-color: #004851;
+  transform: translateY(-2px);
 }
+
