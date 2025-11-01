@@ -1,5 +1,8 @@
 ---
 title: "Multimodal Deep Learning Model for Predicting Thrombus Thickness and Elasticity Using Ultrasound Imaging"
+excerpt: "Multimodal CNN combining 1D LGFU, 2D FFT, and Doppler ultrasound data to predict thrombus properties."
+header:
+  image: /assets/img/teaching/thrombus-thumbnail.jpg
 date: 2025-11-01
 layout: single
 categories: teaching
@@ -7,6 +10,7 @@ sidebar:
   nav: "main"
 mathjax: true
 ---
+
 
 ## English
 
