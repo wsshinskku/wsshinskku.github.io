@@ -145,7 +145,6 @@ These distinctions recognize the study’s contribution to biomedical AI and its
 이는 향후 **AI 기반 심혈관 질환 조기 진단** 및 **비침습 의료영상 분석 시스템**으로의 확장 가능성을 제시합니다.
 
 ---
-
 ### 수상 내역
 🥈 **2025년 KSEF Senior APB 국내 부문 은상**  
 🥈 **2025년 KSEF Senior APB 국제 부문 은상**
