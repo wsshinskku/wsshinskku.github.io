@@ -6,7 +6,7 @@ sidebar:
   nav: "main"
 ---
 
-# **WOOSEOK SHIN**
+# **Wooseok Daniel Shin**
 ![profile](/assets/img/profile.jpg){: width="180" .align-left}
 Ph.D. Candidate, Department of Electrical and Computer Engineering  
 **Sungkyunkwan University (SKKU)**, Suwon, Korea  
