@@ -1,10 +1,14 @@
 ---
 title: "FedVar: Federated Learning Algorithm with Weight Variation in Clients"
-date: 2022-07-06
+excerpt: "Addresses client heterogeneity in FL using adaptive weight variation metrics."
+header:
+  image: /assets/img/research/fedvar-thumbnail.jpg
+date: 2022-07-01
 layout: single
 categories: research
 sidebar:
   nav: "main"
+mathjax: true
 ---
 
 ## Overview  
