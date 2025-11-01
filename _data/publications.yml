@@ -18,6 +18,30 @@
     page: "https://scholar.google.com/citations?view_op=view_citation&hl=ko&user=xm6czH8AAAAJ&citation_for_view=xm6czH8AAAAJ:u5HHmVD_uO8C"
     github: "https://github.com/wsshinskku/FedGCD"
 
+- title: "FedHM: Federated Hierarchical Matching for Efficient Model Aggregation in Heterogeneous Networks"
+  venue: "Elsevier Internet of Things (under review)"
+  year: 2025
+  authors:
+    - Wooseok Shin
+    - Janghoon Yang
+    - Jitae Shin
+  links:
+    page: "#"
+    github: "#"
+
+- title: "St-INTEL: Stackelberg-Intent Enhanced Learning for Multi-Vendor Open RAN Environments"
+  venue: "IEEE Transactions on Network and Service Management (under review)"
+  year: 2026
+  authors:
+    - Wooseok Shin
+    - Janghoon Yang
+    - Zhiqiang Shen
+    - Miseok Choi
+    - Jitae Shin
+  links:
+    page: "#"
+    github: "#"
+
 - title: "TFL-CORAN: Transfer-Enhanced Federated Learning with Dynamic Clustering for 5G Open RAN"
   venue: "IEEE ICC (under review)"
   year: 2026
