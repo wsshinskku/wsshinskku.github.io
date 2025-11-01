@@ -1,12 +1,12 @@
 ---
-layout: collection
+layout: single
 title: "Research"
-collection: research
 permalink: /research/
 sidebar:
   nav: "main"
 ---
 
+## Research
 Explore completed research frameworks below.
 
 {% for post in site.research reversed %}
