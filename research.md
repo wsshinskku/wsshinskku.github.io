@@ -8,7 +8,7 @@ sidebar:
   nav: "main"
 ---
 
-Explore ongoing and completed research frameworks below.
+Explore completed research frameworks below.
 
 - **FedVar:** FL via Client Weight Variation
 - **FedGCD:** FL via GNN-based Community Detection
