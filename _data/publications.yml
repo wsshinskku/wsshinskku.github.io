@@ -18,9 +18,9 @@
     page: "https://scholar.google.com/citations?view_op=view_citation&hl=ko&user=xm6czH8AAAAJ&citation_for_view=xm6czH8AAAAJ:u5HHmVD_uO8C"
     github: "https://github.com/wsshinskku/FedGCD"
 
-- title: "FedHM: Federated Hierarchical Matching for Efficient Model Aggregation in Heterogeneous Networks"
-  venue: "Elsevier Internet of Things (under review)"
-  year: 2025
+- title: "Structured Non IID Federated Learning with Dual Scale Hybrid Divergence and Relation Aware Embedding"
+  venue: "Springer Discover Artificial Intelligence (under review)"
+  year: 2026
   authors:
     - Wooseok Shin
     - Janghoon Yang
@@ -29,27 +29,39 @@
     page: "#"
     github: "#"
 
-- title: "St-INTEL: Stackelberg-Intent Enhanced Learning for Multi-Vendor Open RAN Environments"
-  venue: "IEEE Transactions on Network and Service Management (under review)"
+- title: "St-INTEL: Stackelberg-Intent Enhanced Learning based Resource Allocation in 5G Open RAN"
+  venue: "Elsevier Computer Communications - Special Issue: Intent-Based Agentic AI for Next-Generation Networking (under review)"
   year: 2025
   authors:
     - Wooseok Shin
     - Janghoon Yang
     - Zhiqiang Shen
-    - Miseok Choi
+    - Minseok Choi
     - Jitae Shin
   links:
     page: "#"
     github: "#"
 
-- title: "TFL-CORAN: Transfer-Enhanced Federated Learning with Dynamic Clustering for 5G Open RAN"
-  venue: "IEEE ICC (under review)"
+- title: "Transfer-enhanced Federated Learning with Dynamic Clustering for Traffic Management in 5G Open RAN"
+  venue: "Elsevier Computer Communications (under review)"
   year: 2026
   authors:
     - Wooseok Shin
     - Janghoon Yang
     - Zhiqiang Shen
-    - Miseok Choi
+    - Minseok Choi
+    - Jitae Shin
+  links:
+    page: "#"
+    github: "#"
+
+- title: "Causal Representation based Personalized Federated Learning with Causal Graph Consensus for Medical Imaging"
+  venue: "MDPI Electronics - Special Issue: AI-Driven Medical Image/Video Processing (under review)"
+  year: 2026
+  authors:
+    - Wooseok Shin
+    - Zhiqiang Shen
+    - Gyutae Oh
     - Jitae Shin
   links:
     page: "#"
