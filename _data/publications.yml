@@ -10,7 +10,7 @@
     github: "#"
 
 - title: "FedVar: Federated Learning Algorithm with Weight Variation in Clients"
-  venue: "IEEE ITC-CSCC"
+  venue: "IEEE International Technical Conference on Circuits/Systems, Computers and Communications"
   year: 2022
   authors:
     - Wooseok Shin
@@ -30,7 +30,7 @@
     github: "#"
 
 - title: "FedGCD: Federated Learning Algorithm with GNN based Community Detection for Heterogeneous Data"
-  venue: "JICS (KCI Journal)"
+  venue: "Journal of Internet Computing and Services (KCI Journal)"
   year: 2023
   authors:
     - Wooseok Shin
