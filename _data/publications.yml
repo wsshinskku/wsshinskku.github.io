@@ -87,3 +87,14 @@
   links:
     page: "#"
     github: "#"
+
+- title: "Time-Aware Graph Neural Network for Asynchronous Multi-Station Integrated Sensing and Communications Fusion in Open RAN"
+  venue: "MDPI Sensors - Special Issue: Mobile Sensing and Computing in Internet of Things (SCI(E) Q2, under review)"
+  year: 2026
+  authors:
+    - Zhiqiang Shen
+    - Wooseok Shin
+    - Jitae Shin
+  links:
+    page: "#"
+    github: "#"
