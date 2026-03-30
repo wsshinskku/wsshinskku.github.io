@@ -1,3 +1,14 @@
+- title: "스마트 자동차 서비스를 위한 차량 간 통신 프로토콜 분석"
+  venue: "한국통신학회 하계종합학술발표회"
+  year: 2017
+  authors:
+    - 신우석
+    - 이영석
+    - 염익준
+  links:
+    page: "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE07218632"
+    github: "#"
+
 - title: "FedVar: Federated Learning Algorithm with Weight Variation in Clients"
   venue: "IEEE ITC-CSCC"
   year: 2022
@@ -7,6 +18,16 @@
   links:
     page: "https://ieeexplore.ieee.org/abstract/document/9894899"
     github: "https://github.com/wsshinskku/FedVar"
+
+- title: "클라이언트 가중치의 다봉분포시 분산을 이용한 연합학습"
+  venue: "Workshop on Image Processing and Image Understanding (IPIU)"
+  year: 2023
+  authors:
+    - 신우석
+    - 신지태
+  links:
+    page: "http://ipiu2023.ipiu.or.kr/?act=info.page&pcode=sub04"
+    github: "#"
 
 - title: "FedGCD: Federated Learning Algorithm with GNN based Community Detection for Heterogeneous Data"
   venue: "JICS (KCI Journal)"
@@ -31,7 +52,7 @@
 
 - title: "St-INTEL: Stackelberg-Intent Enhanced Learning based Resource Allocation in 5G Open RAN"
   venue: "Elsevier Computer Communications - Special Issue: Intent-Based Agentic AI for Next-Generation Networking (under review)"
-  year: 2025
+  year: 2026
   authors:
     - Wooseok Shin
     - Janghoon Yang
