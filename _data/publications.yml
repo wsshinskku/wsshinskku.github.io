@@ -40,7 +40,7 @@
     github: "https://github.com/wsshinskku/FedGCD"
 
 - title: "Structured Non IID Federated Learning with Dual Scale Hybrid Divergence and Relation Aware Embedding"
-  venue: "Springer Discover Artificial Intelligence (under review)"
+  venue: "Springer Discover Artificial Intelligence (Q1, under review)"
   year: 2026
   authors:
     - Wooseok Shin
@@ -51,7 +51,7 @@
     github: "#"
 
 - title: "St-INTEL: Stackelberg-Intent Enhanced Learning based Resource Allocation in 5G Open RAN"
-  venue: "Elsevier Computer Communications - Special Issue: Intent-Based Agentic AI for Next-Generation Networking (under review)"
+  venue: "Elsevier Computer Communications - Special Issue: Intent-Based Agentic AI for Next-Generation Networking (Q1, under review)"
   year: 2026
   authors:
     - Wooseok Shin
@@ -64,7 +64,7 @@
     github: "#"
 
 - title: "Transfer-enhanced Federated Learning with Dynamic Clustering for Traffic Management in 5G Open RAN"
-  venue: "Elsevier Computer Communications (under review)"
+  venue: "Elsevier Computer Communications (Q1, under review)"
   year: 2026
   authors:
     - Wooseok Shin
@@ -77,7 +77,7 @@
     github: "#"
 
 - title: "Causal Representation based Personalized Federated Learning with Causal Graph Consensus for Medical Imaging"
-  venue: "MDPI Electronics - Special Issue: AI-Driven Medical Image/Video Processing (under review)"
+  venue: "MDPI Electronics - Special Issue: AI-Driven Medical Image/Video Processing (Q2, under review)"
   year: 2026
   authors:
     - Wooseok Shin
