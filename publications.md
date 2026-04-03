@@ -19,7 +19,24 @@ Below is a list of my publications, grouped by year.
       <li>
         <strong>{{ p.title }}</strong><br>
         <em>{{ p.venue }}</em> ({{ p.year }})<br>
-        {{ p.authors | join: ", " }}<br>
+
+        <!-- Authors -->
+        {% for a in p.authors %}
+          {% if a == "Wooseok Shin" or a == "신우석" %}
+            <b>{{ a }}</b>
+          {% else %}
+            {{ a }}
+          {% endif %}
+
+          {% if p.corresponding == a %}
+            <sup>*</sup>
+          {% endif %}
+
+          {% unless forloop.last %}, {% endunless %}
+        {% endfor %}
+        <br>
+
+        <!-- Links -->
         {% if p.links.page %}
           [<a href="{{ p.links.page }}" target="_blank">PAGE</a>]
         {% endif %}
@@ -32,6 +49,5 @@ Below is a list of my publications, grouped by year.
   {% endfor %}
 </ul>
 {% endfor %}
-
 ---
 
