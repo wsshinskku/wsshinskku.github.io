@@ -2,9 +2,9 @@
   venue: "한국통신학회 하계종합학술발표회"
   year: 2017
   authors:
-    - 신우석
+    - **신우석**
     - 이영석
-    - 염익준
+    - 염익준†
   links:
     page: "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE07218632"
     github: "#"
@@ -13,8 +13,8 @@
   venue: "IEEE International Technical Conference on Circuits/Systems, Computers and Communications"
   year: 2022
   authors:
-    - Wooseok Shin
-    - Jitae Shin
+    - **Wooseok Shin**
+    - Jitae Shin†
   links:
     page: "https://ieeexplore.ieee.org/abstract/document/9894899"
     github: "https://github.com/wsshinskku/FedVar"
@@ -23,8 +23,8 @@
   venue: "Workshop on Image Processing and Image Understanding (IPIU)"
   year: 2023
   authors:
-    - 신우석
-    - 신지태
+    - **신우석**
+    - 신지태†
   links:
     page: "http://ipiu2023.ipiu.or.kr/?act=info.page&pcode=sub04"
     github: "#"
@@ -33,8 +33,8 @@
   venue: "Journal of Internet Computing and Services (KCI Journal)"
   year: 2023
   authors:
-    - Wooseok Shin
-    - Jitae Shin
+    - **Wooseok Shin**
+    - Jitae Shin†
   links:
     page: "https://scholar.google.com/citations?view_op=view_citation&hl=ko&user=xm6czH8AAAAJ&citation_for_view=xm6czH8AAAAJ:u5HHmVD_uO8C"
     github: "https://github.com/wsshinskku/FedGCD"
@@ -43,9 +43,9 @@
   venue: "Springer Discover Artificial Intelligence (SCI(E) Q1, under review)"
   year: 2026
   authors:
-    - Wooseok Shin
+    - **Wooseok Shin**
     - Janghoon Yang
-    - Jitae Shin
+    - Jitae Shin†
   links:
     page: "#"
     github: "#"
@@ -54,11 +54,11 @@
   venue: "Elsevier Computer Communications - Special Issue: Intent-Based Agentic AI for Next-Generation Networking (SCI(E) Q1, under review)"
   year: 2026
   authors:
-    - Wooseok Shin
+    - **Wooseok Shin**
     - Janghoon Yang
     - Zhiqiang Shen
     - Minseok Choi
-    - Jitae Shin
+    - Jitae Shin†
   links:
     page: "#"
     github: "#"
@@ -67,11 +67,11 @@
   venue: "Elsevier Computer Communications (SCI(E) Q1, under review)"
   year: 2026
   authors:
-    - Wooseok Shin
+    - **Wooseok Shin**
     - Janghoon Yang
     - Zhiqiang Shen
     - Minseok Choi
-    - Jitae Shin
+    - Jitae Shin†
   links:
     page: "#"
     github: "#"
@@ -80,10 +80,10 @@
   venue: "MDPI Electronics - Special Issue: AI-Driven Medical Image/Video Processing (SCI(E) Q2, under review)"
   year: 2026
   authors:
-    - Wooseok Shin
+    - **Wooseok Shin**
     - Zhiqiang Shen
     - Gyutae Oh
-    - Jitae Shin
+    - Jitae Shin†
   links:
     page: "#"
     github: "#"
@@ -93,8 +93,8 @@
   year: 2026
   authors:
     - Zhiqiang Shen
-    - Wooseok Shin
-    - Jitae Shin
+    - **Wooseok Shin**
+    - Jitae Shin†
   links:
     page: "#"
     github: "#"
