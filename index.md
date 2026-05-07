@@ -36,6 +36,6 @@ Beyond research, I serve as **Lead Instructor at TEdI/HelloAlgo** and **Science 
 - **St-INTEL**: 5G Open RAN에서 인텐트 기반 자원 할당을 위한 Stackelberg-Intent 강화학습 프레임워크  
 - **Pandora**: Federated Contract Learning 기반의 개인화된 Open RAN xApp 오케스트레이션 프레임워크  
 - **CarPe-FL**: 이질적인 다기관 의료 영상 환경을 위한 개인화 연합학습 프레임워크  
-- **FedHydra**: 강건한 분산 AI 시스템을 위한 이질성 인지 연합학습 프레임워크  
+- **FedHyDRA**: 강건한 분산 AI 시스템을 위한 이질성 인지 연합학습 프레임워크  
 
 또한 **TEdI/HelloAlgo 메인 강사** 및 **IvyZen Science Fair Director**로서 한국정보올림피아드(KOI), 미국컴퓨팅올림피아드(USACO), AP Computer Science A 수업을 진행하고 있으며, 통신 시스템, 환경 모델링, 바이오인포매틱스, AI 기반 예술 등 다양한 융합 AI 연구 프로젝트를 지도하고 있습니다.
