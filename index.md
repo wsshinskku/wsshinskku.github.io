@@ -18,7 +18,7 @@ I design learning-driven frameworks that connect **distributed intelligence, per
 - **St-INTEL**: Stackelberg-Intent Enhanced Learning for intent-aware resource allocation in 5G Open RAN  
 - **Pandora**: Personalized Adaptive Network-Driven Open RAN Orchestration with Federated Contracts  
 - **CarPe-FL**: Personalized Federated Learning for heterogeneous multi-center medical imaging  
-- **FedHydra**: Heterogeneity-aware Federated Learning for robust distributed AI systems  
+- **FedHyDRA**: Heterogeneity-aware Federated Learning for robust distributed AI systems  
 
 Beyond research, I serve as **Lead Instructor at TEdI/HelloAlgo** and **Science Fair Director at IvyZen**, where I mentor students in the Korean Olympiad in Informatics (KOI), the USA Computing Olympiad (USACO), AP Computer Science A, and interdisciplinary AI research projects spanning communication systems, environmental modeling, bioinformatics, and AI-driven arts.
 
