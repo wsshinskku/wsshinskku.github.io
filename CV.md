@@ -19,6 +19,7 @@ toc_sticky: true
 Email: **swsda95@skku.edu** · **swsda95@naver.com**  
 
 - 🔗 [Homepage](https://wsshinskku.github.io)  
+- 🧪 [Media System Laboratory (MSL)](https://msl.skku.edu)  
 - 📄 [Google Scholar](https://scholar.google.com/citations?user=xm6czH8AAAAJ)  
 - 💻 [GitHub](https://github.com/wsshinskku)
 
