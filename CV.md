@@ -113,15 +113,13 @@ My broader research goal is to build deployable distributed AI systems that expl
 
 ## **TEACHING AND MENTORING EXPERIENCE**
 
-### **Lead Instructor**  
-**TEdI / HelloAlgo**
+**TEdI / HelloAlgo - Lead Instructor and Contents Team Leader**
 
-- Taught algorithmic problem solving, Python, C++, USACO, KOI, and AP Computer Science A.
+- Taught algorithmic problem solving, Python, C++, USACO, KOI, and AP Computer Science A; supervised the design of contest-style practice problems and the construction of official test cases.
 - Designed lecture materials and programming exercises for middle- and high-school students.
 - Mentored students in computational thinking, data structures, algorithms, and AI-oriented project development.
 
-### **Science Fair Research Mentor / Director**  
-**IvyZen**
+**IvyZen - Science Fair Research Mentor / Director**  
 
 - Supervised student research projects in AI, computer science, engineering, environmental modeling, and data-driven systems.
 - Guided students through research topic selection, dataset construction, implementation, paper writing, and presentation preparation.
