@@ -7,7 +7,11 @@ sidebar:
 ---
 
 <style>
-/* Common badge style */
+
+/* =========================================
+   Common Badge
+   ========================================= */
+
 .pub-badge {
   display: inline-block;
   margin-left: 5px;
@@ -19,25 +23,41 @@ sidebar:
   line-height: 1.4;
 }
 
-/* Publication Type */
+
+/* =========================================
+   Publication Type
+   ========================================= */
+
 .pub-type {
   background: #eceff1;
   color: #37474f;
 }
 
-/* Publisher */
+
+/* =========================================
+   Publisher
+   ========================================= */
+
 .pub-publisher {
   background: #ede7f6;
   color: #4527a0;
 }
 
-/* Index */
+
+/* =========================================
+   Index
+   ========================================= */
+
 .pub-index {
   background: #e8eaf6;
   color: #303f9f;
 }
 
-/* Quartile */
+
+/* =========================================
+   Journal Quartile
+   ========================================= */
+
 .pub-q1 {
   background: #e8f5e9;
   color: #1b5e20;
@@ -58,7 +78,21 @@ sidebar:
   color: #bf360c;
 }
 
-/* Status */
+
+/* =========================================
+   Conference Ranking
+   ========================================= */
+
+.pub-ranking {
+  background: #e8f5e9;
+  color: #1b5e20;
+}
+
+
+/* =========================================
+   Publication Status
+   ========================================= */
+
 .pub-published {
   background: #e8f5e9;
   color: #1b5e20;
@@ -94,113 +128,213 @@ sidebar:
   color: #424242;
 }
 
-/* Publication item spacing */
+
+/* =========================================
+   Publication Layout
+   ========================================= */
+
 .publication-item {
   margin-bottom: 1.25em;
 }
 
-/* Publication links */
 .pub-links {
   margin-top: 4px;
   font-size: 0.92em;
 }
+
 </style>
+
 
 Below is a list of my publications, grouped by year.  
 My name is shown in **bold**, and the corresponding author is marked with an asterisk (*).
 
+
 {% assign sorted = site.data.publications | sort: "year" | reverse %}
 {% assign years = sorted | map: "year" | uniq %}
+
 
 {% for y in years %}
 
 ## {{ y }}
 
 <ul>
+
 {% for p in sorted %}
+
 {% if p.year == y %}
 
 <li class="publication-item">
 
+
+<!-- =========================================
+     Title
+     ========================================= -->
+
 <strong>{{ p.title }}</strong><br>
+
+
+<!-- =========================================
+     Venue
+     ========================================= -->
 
 <em>{{ p.venue }}</em> ({{ p.year }})
 
-<!-- Publication Type -->
+
+<!-- =========================================
+     Type
+     ========================================= -->
+
 {% if p.type %}
-  <span class="pub-badge pub-type">
-    {{ p.type }}
-  </span>
+<span class="pub-badge pub-type">
+  {{ p.type }}
+</span>
 {% endif %}
 
-<!-- Publisher -->
+
+<!-- =========================================
+     Publisher
+     ========================================= -->
+
 {% if p.publisher %}
-  <span class="pub-badge pub-publisher">
-    {{ p.publisher }}
-  </span>
+<span class="pub-badge pub-publisher">
+  {{ p.publisher }}
+</span>
 {% endif %}
 
-<!-- Index Badges -->
+
+<!-- =========================================
+     Index
+     ========================================= -->
+
 {% if p.index %}
+
   {% for idx in p.index %}
+
     <span class="pub-badge pub-index">
       {{ idx }}
     </span>
+
   {% endfor %}
+
 {% endif %}
 
-<!-- Quartile -->
+
+<!-- =========================================
+     Journal Quartile
+     ========================================= -->
+
 {% if p.quartile and p.quartile != "" %}
+
   {% assign quartile_class = p.quartile | downcase %}
+
   <span class="pub-badge pub-{{ quartile_class }}">
     {{ p.quartile }}
   </span>
+
 {% endif %}
 
-<!-- Status -->
+
+<!-- =========================================
+     Conference Ranking
+     ========================================= -->
+
+{% if p.ranking %}
+
+  {% for rank in p.ranking %}
+
+    <span class="pub-badge pub-ranking">
+      {{ rank }}
+    </span>
+
+  {% endfor %}
+
+{% endif %}
+
+
+<!-- =========================================
+     Status
+     ========================================= -->
+
 {% if p.status %}
-  {% assign status_class = p.status | downcase | replace: " ", "-" %}
+
+  {% assign status_class = p.status
+    | downcase
+    | replace: " ", "-"
+  %}
+
   <span class="pub-badge pub-{{ status_class }}">
     {{ p.status }}
   </span>
+
 {% endif %}
+
 
 <br>
 
-<!-- Authors -->
+
+<!-- =========================================
+     Authors
+     ========================================= -->
+
 {% for a in p.authors %}
 
   {% if a == "Wooseok Shin" or a == "신우석" %}
+
     <b>{{ a }}</b>
+
   {% else %}
+
     {{ a }}
+
   {% endif %}
+
 
   {% if p.corresponding == a %}
     <sup>*</sup>
   {% endif %}
 
+
   {% unless forloop.last %}, {% endunless %}
 
 {% endfor %}
 
-<!-- Links -->
+
+<!-- =========================================
+     Links
+     ========================================= -->
+
 <div class="pub-links">
 
 {% if p.links.page and p.links.page != "#" %}
-  [<a href="{{ p.links.page }}" target="_blank" rel="noopener noreferrer">PAGE</a>]
+
+  [<a
+    href="{{ p.links.page }}"
+    target="_blank"
+    rel="noopener noreferrer"
+  >PAGE</a>]
+
 {% endif %}
 
+
 {% if p.links.github and p.links.github != "#" %}
-  [<a href="{{ p.links.github }}" target="_blank" rel="noopener noreferrer">GITHUB</a>]
+
+  [<a
+    href="{{ p.links.github }}"
+    target="_blank"
+    rel="noopener noreferrer"
+  >GITHUB</a>]
+
 {% endif %}
 
 </div>
 
+
 </li>
 
 {% endif %}
+
 {% endfor %}
+
 </ul>
 
 {% endfor %}
