@@ -6,48 +6,178 @@ sidebar:
   nav: "main"
 ---
 
-Below is a list of my publications, grouped by year.
+<style>
+/* Publication metadata badges */
+.pub-badge {
+  display: inline-block;
+  margin-left: 5px;
+  margin-top: 3px;
+  padding: 2px 8px;
+  border-radius: 10px;
+  font-size: 0.72em;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+/* Publication type */
+.pub-type {
+  background: #eceff1;
+  color: #37474f;
+}
+
+/* Index */
+.pub-index {
+  background: #e8eaf6;
+  color: #303f9f;
+}
+
+/* Quartile */
+.pub-q1 {
+  background: #e8f5e9;
+  color: #1b5e20;
+}
+
+.pub-q2 {
+  background: #e3f2fd;
+  color: #0d47a1;
+}
+
+.pub-q3 {
+  background: #fff8e1;
+  color: #8d6e00;
+}
+
+.pub-q4 {
+  background: #fbe9e7;
+  color: #bf360c;
+}
+
+/* Status */
+.pub-published {
+  background: #e8f5e9;
+  color: #1b5e20;
+}
+
+.pub-accepted {
+  background: #e0f2f1;
+  color: #00695c;
+}
+
+.pub-first-revision {
+  background: #fff3e0;
+  color: #e65100;
+}
+
+.pub-major-revision {
+  background: #fff3e0;
+  color: #e65100;
+}
+
+.pub-minor-revision {
+  background: #fff8e1;
+  color: #795548;
+}
+
+.pub-under-review {
+  background: #f3e5f5;
+  color: #6a1b9a;
+}
+
+.pub-submitted {
+  background: #eeeeee;
+  color: #424242;
+}
+
+/* Publication item spacing */
+.publication-item {
+  margin-bottom: 1.25em;
+}
+
+/* Links */
+.pub-links {
+  margin-top: 4px;
+  font-size: 0.92em;
+}
+</style>
+
+Below is a list of my publications, grouped by year.  
+My name is shown in **bold**, and the corresponding author is marked with an asterisk (*).
 
 {% assign sorted = site.data.publications | sort: "year" | reverse %}
 {% assign years = sorted | map: "year" | uniq %}
 
 {% for y in years %}
+
 ## {{ y }}
+
 <ul>
-  {% for p in sorted %}
-    {% if p.year == y %}
-      <li>
-        <strong>{{ p.title }}</strong><br>
-        <em>{{ p.venue }}</em> ({{ p.year }})<br>
+{% for p in sorted %}
+{% if p.year == y %}
 
-        <!-- Authors -->
-        {% for a in p.authors %}
-          {% if a == "Wooseok Shin" or a == "신우석" %}
-            <b>{{ a }}</b>
-          {% else %}
-            {{ a }}
-          {% endif %}
+<li class="publication-item">
 
-          {% if p.corresponding == a %}
-            <sup>*</sup>
-          {% endif %}
+<strong>{{ p.title }}</strong><br>
 
-          {% unless forloop.last %}, {% endunless %}
-        {% endfor %}
-        <br>
+<em>{{ p.venue }}</em> ({{ p.year }})
 
-        <!-- Links -->
-        {% if p.links.page %}
-          [<a href="{{ p.links.page }}" target="_blank">PAGE</a>]
-        {% endif %}
-        {% if p.links.github %}
-          [<a href="{{ p.links.github }}" target="_blank">GITHUB</a>]
-        {% endif %}
-      </li>
-      <br>
-    {% endif %}
-  {% endfor %}
-</ul>
+<!-- Type Badge -->
+{% if p.type %}
+<span class="pub-badge pub-type">{{ p.type }}</span>
+{% endif %}
+
+<!-- Index Badge -->
+{% if p.index and p.index != "" %}
+<span class="pub-badge pub-index">{{ p.index }}</span>
+{% endif %}
+
+<!-- Quartile Badge -->
+{% if p.quartile and p.quartile != "" %}
+{% assign quartile_class = p.quartile | downcase %}
+<span class="pub-badge pub-{{ quartile_class }}">{{ p.quartile }}</span>
+{% endif %}
+
+<!-- Status Badge -->
+{% if p.status %}
+{% assign status_class = p.status | downcase | replace: " ", "-" %}
+<span class="pub-badge pub-{{ status_class }}">{{ p.status }}</span>
+{% endif %}
+
+<br>
+
+<!-- Authors -->
+{% for a in p.authors %}
+
+{% if a == "Wooseok Shin" or a == "신우석" %}
+<b>{{ a }}</b>
+{% else %}
+{{ a }}
+{% endif %}
+
+{% if p.corresponding == a %}
+<sup>*</sup>
+{% endif %}
+
+{% unless forloop.last %}, {% endunless %}
+
 {% endfor %}
----
 
+<!-- Links -->
+<div class="pub-links">
+
+{% if p.links.page and p.links.page != "#" %}
+[<a href="{{ p.links.page }}" target="_blank" rel="noopener noreferrer">PAGE</a>]
+{% endif %}
+
+{% if p.links.github and p.links.github != "#" %}
+[<a href="{{ p.links.github }}" target="_blank" rel="noopener noreferrer">GITHUB</a>]
+{% endif %}
+
+</div>
+
+</li>
+
+{% endif %}
+{% endfor %}
+</ul>
+
+{% endfor %}
