@@ -55,35 +55,12 @@ sidebar:
 
 
 /* =========================================
-   Journal Quartile
+   Rank
+   Journal: Q1, Q2, ...
+   Conference: BK Tier 1, CORE A*, ...
    ========================================= */
 
-.pub-q1 {
-  background: #e8f5e9;
-  color: #1b5e20;
-}
-
-.pub-q2 {
-  background: #e3f2fd;
-  color: #0d47a1;
-}
-
-.pub-q3 {
-  background: #fff8e1;
-  color: #8d6e00;
-}
-
-.pub-q4 {
-  background: #fbe9e7;
-  color: #bf360c;
-}
-
-
-/* =========================================
-   Conference Ranking
-   ========================================= */
-
-.pub-ranking {
+.pub-rank {
   background: #e8f5e9;
   color: #1b5e20;
 }
@@ -185,9 +162,9 @@ My name is shown in **bold**, and the corresponding author is marked with an ast
      ========================================= -->
 
 {% if p.type %}
-<span class="pub-badge pub-type">
-  {{ p.type }}
-</span>
+  <span class="pub-badge pub-type">
+    {{ p.type }}
+  </span>
 {% endif %}
 
 
@@ -196,9 +173,9 @@ My name is shown in **bold**, and the corresponding author is marked with an ast
      ========================================= -->
 
 {% if p.publisher %}
-<span class="pub-badge pub-publisher">
-  {{ p.publisher }}
-</span>
+  <span class="pub-badge pub-publisher">
+    {{ p.publisher }}
+  </span>
 {% endif %}
 
 
@@ -206,7 +183,7 @@ My name is shown in **bold**, and the corresponding author is marked with an ast
      Index
      ========================================= -->
 
-{% if p.index %}
+{% if p.index and p.index != empty %}
 
   {% for idx in p.index %}
 
@@ -220,30 +197,15 @@ My name is shown in **bold**, and the corresponding author is marked with an ast
 
 
 <!-- =========================================
-     Journal Quartile
+     Rank
      ========================================= -->
 
-{% if p.quartile and p.quartile != "" %}
+{% if p.rank and p.rank != empty %}
 
-  {% assign quartile_class = p.quartile | downcase %}
+  {% for r in p.rank %}
 
-  <span class="pub-badge pub-{{ quartile_class }}">
-    {{ p.quartile }}
-  </span>
-
-{% endif %}
-
-
-<!-- =========================================
-     Conference Ranking
-     ========================================= -->
-
-{% if p.ranking %}
-
-  {% for rank in p.ranking %}
-
-    <span class="pub-badge pub-ranking">
-      {{ rank }}
+    <span class="pub-badge pub-rank">
+      {{ r }}
     </span>
 
   {% endfor %}
