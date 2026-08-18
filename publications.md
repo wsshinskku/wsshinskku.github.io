@@ -7,7 +7,7 @@ sidebar:
 ---
 
 <style>
-/* Publication metadata badges */
+/* Common badge style */
 .pub-badge {
   display: inline-block;
   margin-left: 5px;
@@ -19,10 +19,16 @@ sidebar:
   line-height: 1.4;
 }
 
-/* Publication type */
+/* Publication Type */
 .pub-type {
   background: #eceff1;
   color: #37474f;
+}
+
+/* Publisher */
+.pub-publisher {
+  background: #ede7f6;
+  color: #4527a0;
 }
 
 /* Index */
@@ -93,7 +99,7 @@ sidebar:
   margin-bottom: 1.25em;
 }
 
-/* Links */
+/* Publication links */
 .pub-links {
   margin-top: 4px;
   font-size: 0.92em;
@@ -120,26 +126,43 @@ My name is shown in **bold**, and the corresponding author is marked with an ast
 
 <em>{{ p.venue }}</em> ({{ p.year }})
 
-<!-- Type Badge -->
+<!-- Publication Type -->
 {% if p.type %}
-<span class="pub-badge pub-type">{{ p.type }}</span>
+  <span class="pub-badge pub-type">
+    {{ p.type }}
+  </span>
 {% endif %}
 
-<!-- Index Badge -->
-{% if p.index and p.index != "" %}
-<span class="pub-badge pub-index">{{ p.index }}</span>
+<!-- Publisher -->
+{% if p.publisher %}
+  <span class="pub-badge pub-publisher">
+    {{ p.publisher }}
+  </span>
 {% endif %}
 
-<!-- Quartile Badge -->
+<!-- Index Badges -->
+{% if p.index %}
+  {% for idx in p.index %}
+    <span class="pub-badge pub-index">
+      {{ idx }}
+    </span>
+  {% endfor %}
+{% endif %}
+
+<!-- Quartile -->
 {% if p.quartile and p.quartile != "" %}
-{% assign quartile_class = p.quartile | downcase %}
-<span class="pub-badge pub-{{ quartile_class }}">{{ p.quartile }}</span>
+  {% assign quartile_class = p.quartile | downcase %}
+  <span class="pub-badge pub-{{ quartile_class }}">
+    {{ p.quartile }}
+  </span>
 {% endif %}
 
-<!-- Status Badge -->
+<!-- Status -->
 {% if p.status %}
-{% assign status_class = p.status | downcase | replace: " ", "-" %}
-<span class="pub-badge pub-{{ status_class }}">{{ p.status }}</span>
+  {% assign status_class = p.status | downcase | replace: " ", "-" %}
+  <span class="pub-badge pub-{{ status_class }}">
+    {{ p.status }}
+  </span>
 {% endif %}
 
 <br>
@@ -147,17 +170,17 @@ My name is shown in **bold**, and the corresponding author is marked with an ast
 <!-- Authors -->
 {% for a in p.authors %}
 
-{% if a == "Wooseok Shin" or a == "신우석" %}
-<b>{{ a }}</b>
-{% else %}
-{{ a }}
-{% endif %}
+  {% if a == "Wooseok Shin" or a == "신우석" %}
+    <b>{{ a }}</b>
+  {% else %}
+    {{ a }}
+  {% endif %}
 
-{% if p.corresponding == a %}
-<sup>*</sup>
-{% endif %}
+  {% if p.corresponding == a %}
+    <sup>*</sup>
+  {% endif %}
 
-{% unless forloop.last %}, {% endunless %}
+  {% unless forloop.last %}, {% endunless %}
 
 {% endfor %}
 
@@ -165,11 +188,11 @@ My name is shown in **bold**, and the corresponding author is marked with an ast
 <div class="pub-links">
 
 {% if p.links.page and p.links.page != "#" %}
-[<a href="{{ p.links.page }}" target="_blank" rel="noopener noreferrer">PAGE</a>]
+  [<a href="{{ p.links.page }}" target="_blank" rel="noopener noreferrer">PAGE</a>]
 {% endif %}
 
 {% if p.links.github and p.links.github != "#" %}
-[<a href="{{ p.links.github }}" target="_blank" rel="noopener noreferrer">GITHUB</a>]
+  [<a href="{{ p.links.github }}" target="_blank" rel="noopener noreferrer">GITHUB</a>]
 {% endif %}
 
 </div>
