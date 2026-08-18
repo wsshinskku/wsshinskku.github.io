@@ -63,7 +63,7 @@
   venue: "Elsevier Applied Soft Computing"
   year: 2026
   type: "Journal"
-  index: "SCIE"
+  index: "SCI(E)"
   quartile: "Q1"
   status: "Under Review"
   authors:
@@ -79,7 +79,7 @@
   venue: "Elsevier Computer Communications - Special Issue: Intent-Based Agentic AI for Next-Generation Networking"
   year: 2026
   type: "Journal"
-  index: "SCIE"
+  index: "SCI(E)"
   quartile: "Q1"
   status: "Under Review"
   authors:
@@ -97,7 +97,7 @@
   venue: "Elsevier Computer Communications"
   year: 2026
   type: "Journal"
-  index: "SCIE"
+  index: "SCI(E)"
   quartile: "Q1"
   status: "First Revision"
   authors:
@@ -115,7 +115,7 @@
   venue: "MDPI Electronics - Special Issue: AI-Driven Medical Image/Video Processing"
   year: 2026
   type: "Journal"
-  index: "SCIE"
+  index: "SCI(E)"
   quartile: "Q2"
   status: "Published"
   authors:
@@ -132,7 +132,7 @@
   venue: "MDPI Sensors - Special Issue: Mobile Sensing and Computing in Internet of Things"
   year: 2026
   type: "Journal"
-  index: "SCIE"
+  index: "SCI(E)"
   quartile: "Q2"
   status: "Published"
   authors:
@@ -148,12 +148,28 @@
   venue: "IEEE INFOCOM 2027 Main Conference"
   year: 2027
   type: "Conference"
-  index: "IEEE"
+  index: "IEEE",  "BK Tier 1"
   quartile: ""
   status: "Submitted"
   authors:
     - Wooseok Shin
     - Zhiqiang Shen
+    - Jitae Shin
+  corresponding: Jitae Shin
+  links:
+    page: "#"
+    github: "#"
+
+- title: "When Does Restoration-Aware Scheduling Pay? A Matched-Restorer Study of O-RAN Telemetry"
+  venue: "IEEE INFOCOM 2027 Main Conference"
+  year: 2027
+  type: "Conference"
+  index: "IEEE", "BK Tier 1"
+  quartile: ""
+  status: "Submitted"
+  authors:
+    - Zhiqiang Shen
+    - Wooseok Shin
     - Jitae Shin
   corresponding: Jitae Shin
   links:
