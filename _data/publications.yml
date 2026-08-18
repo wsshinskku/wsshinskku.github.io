@@ -2,8 +2,10 @@
   venue: "한국통신학회 하계종합학술발표회"
   year: 2017
   type: "Conference"
-  index: "KICS"
+  publisher: "KICS"
+  index: []
   quartile: ""
+  ranking: []
   status: "Published"
   authors:
     - 신우석
@@ -15,11 +17,13 @@
     github: "#"
 
 - title: "FedVar: Federated Learning Algorithm with Weight Variation in Clients"
-  venue: "IEEE International Technical Conference on Circuits/Systems, Computers and Communications (ITC-CSCC)"
+  venue: "International Technical Conference on Circuits/Systems, Computers and Communications (ITC-CSCC)"
   year: 2022
   type: "Conference"
-  index: "IEEE"
+  publisher: "IEEE"
+  index: []
   quartile: ""
+  ranking: []
   status: "Published"
   authors:
     - Wooseok Shin
@@ -33,8 +37,10 @@
   venue: "Workshop on Image Processing and Image Understanding (IPIU)"
   year: 2023
   type: "Conference"
-  index: "Domestic Conference"
+  publisher: "IPIU"
+  index: []
   quartile: ""
+  ranking: []
   status: "Published"
   authors:
     - 신우석
@@ -48,8 +54,11 @@
   venue: "Journal of Internet Computing and Services (JICS)"
   year: 2023
   type: "Journal"
-  index: "KCI"
+  publisher: "KSII"
+  index:
+    - "KCI"
   quartile: ""
+  ranking: []
   status: "Published"
   authors:
     - Wooseok Shin
@@ -60,11 +69,14 @@
     github: "https://github.com/wsshinskku/FedGCD"
 
 - title: "Federated Learning with Dual-Scale Hybrid Divergence and Relation-Aware Embedding for Structured Non-IID Data"
-  venue: "Elsevier Applied Soft Computing"
+  venue: "Applied Soft Computing"
   year: 2026
   type: "Journal"
-  index: "SCI(E)"
+  publisher: "Elsevier"
+  index:
+    - "SCIE"
   quartile: "Q1"
+  ranking: []
   status: "Under Review"
   authors:
     - Wooseok Shin
@@ -76,11 +88,14 @@
     github: "#"
 
 - title: "St-INTEL: Stackelberg-Intent Enhanced Learning based Resource Allocation in 5G Open RAN"
-  venue: "Elsevier Computer Communications - Special Issue: Intent-Based Agentic AI for Next-Generation Networking"
+  venue: "Computer Communications - Special Issue: Intent-Based Agentic AI for Next-Generation Networking"
   year: 2026
   type: "Journal"
-  index: "SCI(E)"
+  publisher: "Elsevier"
+  index:
+    - "SCIE"
   quartile: "Q1"
+  ranking: []
   status: "Under Review"
   authors:
     - Wooseok Shin
@@ -94,11 +109,14 @@
     github: "#"
 
 - title: "Transfer-enhanced Federated Learning with Dynamic Clustering for Traffic Management in 5G Open RAN"
-  venue: "Elsevier Computer Communications"
+  venue: "Computer Communications"
   year: 2026
   type: "Journal"
-  index: "SCI(E)"
+  publisher: "Elsevier"
+  index:
+    - "SCIE"
   quartile: "Q1"
+  ranking: []
   status: "First Revision"
   authors:
     - Wooseok Shin
@@ -112,11 +130,14 @@
     github: "#"
 
 - title: "Causal Representation based Personalized Federated Learning with Causal Graph Consensus for Medical Imaging"
-  venue: "MDPI Electronics - Special Issue: AI-Driven Medical Image/Video Processing"
+  venue: "Electronics - Special Issue: AI-Driven Medical Image/Video Processing"
   year: 2026
   type: "Journal"
-  index: "SCI(E)"
+  publisher: "MDPI"
+  index:
+    - "SCIE"
   quartile: "Q2"
+  ranking: []
   status: "Published"
   authors:
     - Wooseok Shin
@@ -129,11 +150,14 @@
     github: "#"
 
 - title: "Time-Aware Graph Neural Network for Asynchronous Multi-Station Integrated Sensing and Communications Fusion in Open RAN"
-  venue: "MDPI Sensors - Special Issue: Mobile Sensing and Computing in Internet of Things"
+  venue: "Sensors - Special Issue: Mobile Sensing and Computing in Internet of Things"
   year: 2026
   type: "Journal"
-  index: "SCI(E)"
+  publisher: "MDPI"
+  index:
+    - "SCIE"
   quartile: "Q2"
+  ranking: []
   status: "Published"
   authors:
     - Zhiqiang Shen
@@ -148,8 +172,11 @@
   venue: "IEEE INFOCOM 2027 Main Conference"
   year: 2027
   type: "Conference"
-  index: "IEEE",  "BK Tier 1"
+  publisher: "IEEE"
+  index: []
   quartile: ""
+  ranking:
+    - "BK Tier 1"
   status: "Submitted"
   authors:
     - Wooseok Shin
@@ -164,8 +191,11 @@
   venue: "IEEE INFOCOM 2027 Main Conference"
   year: 2027
   type: "Conference"
-  index: "IEEE", "BK Tier 1"
+  publisher: "IEEE"
+  index: []
   quartile: ""
+  ranking:
+    - "BK Tier 1"
   status: "Submitted"
   authors:
     - Zhiqiang Shen
