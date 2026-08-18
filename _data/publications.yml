@@ -4,8 +4,7 @@
   type: "Conference"
   publisher: "KICS"
   index: []
-  quartile: ""
-  ranking: []
+  rank: []
   status: "Published"
   authors:
     - 신우석
@@ -22,8 +21,7 @@
   type: "Conference"
   publisher: "IEEE"
   index: []
-  quartile: ""
-  ranking: []
+  rank: []
   status: "Published"
   authors:
     - Wooseok Shin
@@ -39,8 +37,7 @@
   type: "Conference"
   publisher: "IPIU"
   index: []
-  quartile: ""
-  ranking: []
+  rank: []
   status: "Published"
   authors:
     - 신우석
@@ -57,8 +54,7 @@
   publisher: "KSII"
   index:
     - "KCI"
-  quartile: ""
-  ranking: []
+  rank: []
   status: "Published"
   authors:
     - Wooseok Shin
@@ -75,8 +71,8 @@
   publisher: "Elsevier"
   index:
     - "SCIE"
-  quartile: "Q1"
-  ranking: []
+  rank:
+    - "Q1"
   status: "Under Review"
   authors:
     - Wooseok Shin
@@ -94,8 +90,8 @@
   publisher: "Elsevier"
   index:
     - "SCIE"
-  quartile: "Q1"
-  ranking: []
+  rank:
+    - "Q1"
   status: "Under Review"
   authors:
     - Wooseok Shin
@@ -115,8 +111,8 @@
   publisher: "Elsevier"
   index:
     - "SCIE"
-  quartile: "Q1"
-  ranking: []
+  rank:
+    - "Q1"
   status: "First Revision"
   authors:
     - Wooseok Shin
@@ -136,8 +132,8 @@
   publisher: "MDPI"
   index:
     - "SCIE"
-  quartile: "Q2"
-  ranking: []
+  rank:
+    - "Q2"
   status: "Published"
   authors:
     - Wooseok Shin
@@ -156,8 +152,8 @@
   publisher: "MDPI"
   index:
     - "SCIE"
-  quartile: "Q2"
-  ranking: []
+  rank:
+    - "Q2"
   status: "Published"
   authors:
     - Zhiqiang Shen
@@ -174,8 +170,7 @@
   type: "Conference"
   publisher: "IEEE"
   index: []
-  quartile: ""
-  ranking:
+  rank:
     - "BK Tier 1"
   status: "Submitted"
   authors:
@@ -193,8 +188,7 @@
   type: "Conference"
   publisher: "IEEE"
   index: []
-  quartile: ""
-  ranking:
+  rank:
     - "BK Tier 1"
   status: "Submitted"
   authors:
