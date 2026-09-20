@@ -125,7 +125,7 @@
     page: "#"
     github: "https://github.com/wsshinskku/TFL_CORAN"
 
-- title: "Causal Representation based Personalized Federated Learning with Causal Graph Consensus for Medical Imaging"
+- title: "Causal Representation-Based Personalized Federated Learning with Causal Graph Consensus for Medical Imaging"
   venue: "Electronics - Special Issue: AI-Driven Medical Image/Video Processing"
   year: 2026
   type: "Journal"
@@ -143,7 +143,8 @@
   corresponding: Jitae Shin
   links:
     page: "https://www.mdpi.com/2079-9292/15/10/1983"
-    github: "#"
+    github: "https://github.com/wsshinskku/CarPe-FL"
+    research: "/research/CarPe-FL/"
 
 - title: "Time-Aware Graph Neural Network for Asynchronous Multi-Station Integrated Sensing and Communications Fusion in Open RAN"
   venue: "Sensors - Special Issue: Mobile Sensing and Computing in Internet of Things"

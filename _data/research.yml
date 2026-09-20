@@ -27,6 +27,17 @@ projects:
     summary: "Combines UE-local reinforcement learning with dynamic client grouping at the non-RT RIC. Graph embeddings and soft memberships personalize federated policies, while model transfer supports handovers and newly connected UEs."
     contribution: "Adapt traffic-control policies as radio conditions, client groups, and UE locations change."
     tags: ["Federated RL", "Dynamic clustering", "Model transfer"]
+  - id: carpe-fl
+    name: CarPe-FL
+    group: federated-learning
+    url: /research/CarPe-FL/
+    publication_title: "Causal Representation-Based Personalized Federated Learning with Causal Graph Consensus for Medical Imaging"
+    repository: https://github.com/wsshinskku/CarPe-FL
+    access: public
+    paper_url: https://doi.org/10.3390/electronics15101983
+    summary: "Uses latent proxy graphs to describe differences between medical institutions. Structure-aware clustering and acyclic graph consensus guide personalized representation learning, while local heads preserve site-specific prediction behavior."
+    contribution: "Make shared structural dependencies a coordination prior for multi-center medical imaging."
+    tags: ["Medical imaging", "Causal graph consensus", "Personalized FL"]
   - id: fedhydra
     name: FedHyDRA
     group: federated-learning

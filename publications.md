@@ -290,6 +290,10 @@ My name is shown in **bold**, and the corresponding author is marked with an ast
 
 </div>
 
+{% if p.links.research %}
+<div class="pub-links">[<a href="{{ p.links.research | relative_url }}">RESEARCH OVERVIEW</a>]</div>
+{% endif %}
+
 
 </li>
 
