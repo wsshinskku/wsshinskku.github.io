@@ -81,7 +81,7 @@
   corresponding: Jitae Shin
   links:
     page: "#"
-    github: "#"
+    github: "https://github.com/wsshinskku/FedHyDRA"
 
 - title: "St-INTEL: Stackelberg-Intent Enhanced Learning based Resource Allocation in 5G Open RAN"
   venue: "Computer Communications - Special Issue: Intent-Based Agentic AI for Next-Generation Networking"
@@ -123,7 +123,7 @@
   corresponding: Jitae Shin
   links:
     page: "#"
-    github: "#"
+    github: "https://github.com/wsshinskku/TFL_CORAN"
 
 - title: "Causal Representation based Personalized Federated Learning with Causal Graph Consensus for Medical Imaging"
   venue: "Electronics - Special Issue: AI-Driven Medical Image/Video Processing"
@@ -180,7 +180,7 @@
   corresponding: Jitae Shin
   links:
     page: "#"
-    github: "#"
+    github: "https://github.com/wsshinskku/Pandora"
 
 - title: "When Does Restoration-Aware Scheduling Pay? A Matched-Restorer Study of O-RAN Telemetry"
   venue: "IEEE INFOCOM 2027 Main Conference"
