@@ -1,0 +1,61 @@
+# Status, venue and year come from publications.yml via publication_title.
+groups:
+  - id: open-ran
+    title: "Learning and orchestration for Open RAN"
+    description: "From adapting UE policies to coordinating independently developed xApps."
+  - id: federated-learning
+    title: "Federated learning under heterogeneity"
+    description: "From variation in client updates to graph-based and relation-aware collaboration."
+projects:
+  - id: pandora
+    name: Pandora
+    group: open-ran
+    url: /research/Pandora/
+    publication_title: "Pandora: Personalized Adaptive Network-Driven Open RAN Orchestration with Federated Contracts"
+    repository: https://github.com/wsshinskku/Pandora
+    access: public
+    summary: "Coordinates resource, steering, and QoS xApps through site-personalized feasible action regions. Federated impact models and calibrated risk screening inform contracts; weighted projection minimally adjusts incompatible joint proposals."
+    contribution: "Learn where xApps can operate together, while preserving their own policies."
+    tags: ["xApp coordination", "Federated contracts", "Risk calibration"]
+  - id: tfl-coran
+    name: TFL-CORAN
+    group: open-ran
+    url: /research/TFL-CORAN/
+    publication_title: "Transfer-enhanced Federated Learning with Dynamic Clustering for Traffic Management in 5G Open RAN"
+    repository: https://github.com/wsshinskku/TFL_CORAN
+    access: public
+    summary: "Combines UE-local reinforcement learning with dynamic client grouping at the non-RT RIC. Graph embeddings and soft memberships personalize federated policies, while model transfer supports handovers and newly connected UEs."
+    contribution: "Adapt traffic-control policies as radio conditions, client groups, and UE locations change."
+    tags: ["Federated RL", "Dynamic clustering", "Model transfer"]
+  - id: fedhydra
+    name: FedHyDRA
+    group: federated-learning
+    url: /research/FedHyDRA/
+    publication_title: "Federated Learning with Dual-Scale Hybrid Divergence and Relation-Aware Embedding for Structured Non-IID Data"
+    repository: https://github.com/wsshinskku/FedHyDRA
+    access: private
+    summary: "Models structured client heterogeneity through complementary label and feature distribution summaries. Hybrid divergence, graph representation learning, and soft community memberships guide collaboration under partial participation."
+    contribution: "Represent overlapping client relationships beyond a single measure of distribution mismatch."
+    tags: ["Hybrid divergence", "Graph representation", "Soft membership"]
+  - id: fedgcd
+    name: FedGCD
+    group: federated-learning
+    url: /research/FedGCD/
+    publication_title: "FedGCD: Federated Learning Algorithm with GNN based Community Detection for Heterogeneous Data"
+    repository: https://github.com/wsshinskku/FedGCD
+    access: public
+    paper_url: https://doi.org/10.7472/jksii.2023.24.6.1
+    summary: "Uses a graph view of federated clients to identify communities with related data characteristics. Community detection and membership-aware aggregation organize collaboration in heterogeneous, non-IID settings."
+    contribution: "Make client relationships part of federated model aggregation."
+    tags: ["Community detection", "Client graphs", "Non-IID learning"]
+  - id: fedvar
+    name: FedVar
+    group: federated-learning
+    url: /research/FedVar/
+    publication_title: "FedVar: Federated Learning Algorithm with Weight Variation in Clients"
+    repository: https://github.com/wsshinskku/FedVar
+    access: public
+    paper_url: https://ieeexplore.ieee.org/abstract/document/9894899
+    summary: "Studies variation in client model weights as a signal for server-side aggregation. Statistics of client updates provide a lightweight way to account for heterogeneous local training behavior."
+    contribution: "Use client-weight variation to inform aggregation under non-IID data."
+    tags: ["Weight variation", "Adaptive aggregation", "Non-IID learning"]

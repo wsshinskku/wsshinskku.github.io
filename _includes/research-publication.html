@@ -1,0 +1,3 @@
+{% assign entry = site.data.research.projects | where: 'id', page.research_id | first %}
+{% assign record = site.data.publications | where: 'title', entry.publication_title | first %}
+<p><em>{{ record.title }}</em> is listed as <strong>{{ record.status }}</strong> at <em>{{ record.venue }}</em> ({{ record.year }}) in the <a href="{{ '/publications/' | relative_url }}">publication record</a>.</p>

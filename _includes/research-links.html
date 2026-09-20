@@ -1,0 +1,6 @@
+{% assign research_paper_url = include.project.paper_url | default: include.publication.links.page %}
+<div class="research-links">
+  {% if include.details %}<a class="research-link research-link--primary" href="{{ include.project.url | relative_url }}" aria-label="Read about {{ include.project.name }}">Research overview <span aria-hidden="true">→</span></a>{% endif %}
+  <a class="research-link" href="{{ include.project.repository }}" aria-label="{{ include.project.name }} on GitHub{% if include.project.access == 'private' %} — private repository, authorized access required{% endif %}">GitHub{% if include.project.access == 'private' %} <span class="research-access">Private</span>{% endif %} <span aria-hidden="true">↗</span></a>
+  {% if research_paper_url and research_paper_url != '#' %}<a class="research-link" href="{{ research_paper_url }}" aria-label="Read the {{ include.project.name }} paper">Paper <span aria-hidden="true">↗</span></a>{% endif %}
+</div>

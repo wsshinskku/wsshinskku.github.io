@@ -1,133 +1,45 @@
 ---
-title: "FedVar: Federated Learning Algorithm with Weight Variation in Clients"
-excerpt: "Variance-based client weighting for robust federated learning under non-IID data."
-date: 2022-07-01
+title: "FedVar"
+excerpt: "Client-weight variation for aggregation in heterogeneous federated learning."
+permalink: /research/FedVar/
 layout: single
-categories: research
+research_id: fedvar
 sidebar:
   nav: "main"
-mathjax: true
 ---
 
-<h2>English</h2>
+{% include research-header.html %}
 
-<h3>Overview</h3>
-<p>
-This paper presents <b>FedVar</b>, a federated learning algorithm designed to improve global model aggregation under <b>non-IID (non-independent and identically distributed)</b> data conditions.
-FedVar refines the server-side aggregation process by computing the <b>variance of client weights</b> and excluding outlier clients with extreme deviations.
-</p>
+## Overview
 
-<p>
-<b>Citation:</b><br>
-Shin, W., & Shin, J. (2022, July). <i>FedVar: Federated Learning Algorithm with Weight Variation in Clients.</i><br>
-In <i>2022 37th International Technical Conference on Circuits/Systems, Computers and Communications (ITC-CSCC)</i> (pp. 1–4). IEEE.
-</p>
+**FedVar** investigates how variation among client model weights can inform federated aggregation. When clients train on different data distributions, their updates may differ substantially. The method uses statistics of those weights to establish an aggregation reference rather than treating client behavior as identical.
 
-<hr>
+## Core method
 
-<h3>Methodology</h3>
-<p>
-The proposed algorithm calculates the average and standard deviation of client model weights, 
-then selects only those clients whose updates fall within one standard deviation from the mean.
-This mechanism ensures that clients with skewed data distributions are excluded from global aggregation.
-</p>
+1. **Local learning.** Clients train their models on local data and send model parameters to the server.
+2. **Variation analysis.** The server examines the mean and standard deviation of client weights and identifies a representative range.
+3. **Variation-aware aggregation.** The resulting reference informs how local models contribute to the shared update.
 
-<h4>Mathematical Definition</h4>
+The research focuses on the aggregation stage: client-weight variation acts as a lightweight signal of heterogeneous local training behavior.
 
-$$
-S(w) = \frac{1}{K}\sum_{k=1}^{K}w_k, \quad
-SD(w) = \sqrt{\frac{1}{K}\sum_{k=1}^{K}(w_k - S(w))^2}
-$$
+## Research artifact
 
-$$
-S(w) - SD(w) \leq w_k \leq S(w) + SD(w)
-$$
+The [GitHub repository](https://github.com/wsshinskku/FedVar) contains the original research prototype, `FedVar.py`, and a copy of the paper. The script illustrates the aggregation idea; adapting it to a complete experiment requires the appropriate model definition and dataset integration.
 
-$$
-SDA(w) = \frac{1}{n}\sum_{i=1}^{n}w_{sd,i}
-$$
+- [Paper on IEEE Xplore](https://ieeexplore.ieee.org/abstract/document/9894899)
+- [Paper PDF in the repository](https://github.com/wsshinskku/FedVar/blob/main/FedVar__Federated_Learning_Algorithm_with_Weight_Variation_in_Clients.pdf)
+- [Aggregation prototype](https://github.com/wsshinskku/FedVar/blob/main/FedVar.py)
 
-<p>
-Clients outside this range are excluded from the update step, 
-producing a global model that is both more stable and accurate under heterogeneous data conditions.
-</p>
+## 한국어 요약
 
-<hr>
+**FedVar**는 클라이언트별 모델 가중치의 변화와 분산을 서버 집계에 반영하는 연합학습 연구입니다. 서로 다른 데이터로 학습한 로컬 모델들의 평균과 표준편차를 분석하고, 대표적인 가중치 범위를 이용해 집계 기준을 구성합니다. 클라이언트의 학습 결과에 나타나는 차이를 활용해 non-IID 환경의 데이터 이질성을 다루는 데 초점을 둡니다.
 
-<h3>Experimental Setup</h3>
-<ul>
-  <li><b>Framework:</b> Federated-Learning-PyTorch (Open Source)</li>
-  <li><b>Models:</b> TinyNet, GhostNet, MobileNetV3</li>
-  <li><b>Datasets:</b> CIFAR-10, CIFAR-100, MNIST</li>
-  <li><b>Clients:</b> 100 total</li>
-  <li><b>Local Epochs:</b> 5</li>
-  <li><b>Rounds:</b> 200</li>
-  <li><b>Evaluation:</b> Accuracy and convergence across Non-IID, Semi-IID, and Fully-IID settings</li>
-</ul>
+저장소에는 연구용 프로토타입 코드와 논문 PDF가 포함되어 있습니다. 실제 실험에 사용할 때는 모델과 데이터셋을 연결해야 합니다.
 
-<hr>
+## Publication
 
-<h3>Results</h3>
+Wooseok Shin and Jitae Shin. “FedVar: Federated Learning Algorithm with Weight Variation in Clients.” *2022 37th International Technical Conference on Circuits/Systems, Computers and Communications (ITC-CSCC)*, IEEE, 2022, pp. 1–4.
 
-<table>
-  <thead>
-    <tr>
-      <th>Setting</th>
-      <th>FedSGD</th>
-      <th>FedAvg</th>
-      <th>FedProx</th>
-      <th><b>FedVar (Proposed)</b></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Non-IID (s=1)</td>
-      <td>89.9%</td>
-      <td>90.1%</td>
-      <td>91.0%</td>
-      <td><b>91.2%</b></td>
-    </tr>
-    <tr>
-      <td>Semi-IID (s=0.5)</td>
-      <td>87.1%</td>
-      <td>87.8%</td>
-      <td>88.6%</td>
-      <td><b>89.0%</b></td>
-    </tr>
-    <tr>
-      <td>Fully-IID (s=0)</td>
-      <td>84.9%</td>
-      <td>85.3%</td>
-      <td><b>86.0%</b></td>
-      <td>85.8%</td>
-    </tr>
-  </tbody>
-</table>
+## Related research
 
-<p>
-FedVar achieves the best accuracy in Non-IID environments while maintaining comparable performance in IID settings, 
-demonstrating robustness to client heterogeneity.
-</p>
-
-<hr>
-
-<h3>Conclusion</h3>
-<p>
-FedVar effectively addresses data heterogeneity by integrating variance-based client selection into the aggregation process. 
-The algorithm improves both stability and convergence of federated learning under Non-IID data.
-</p>
-
-<hr>
-
-<h2>한국어</h2>
-
-<h3>연구 요약</h3>
-<p>
-본 논문은 <b>클라이언트 간 데이터 분포 불균형(Non-IID)</b> 상황에서 
-연합학습의 수렴 불안정성을 개선하기 위한 알고리즘 <b>FedVar</b>를 제안한다.
-클라이언트별 모델 가중치의 <b>표준편차(variance)</b>를 계산하고,
-평균 ± 표준편차 범위 내의 클라이언트만 전역 학습에 참여하도록 함으로써,
-데이터 편향이 큰 클라이언트를 자동으로 배제한다.
-이 방식은 Non-IID 환경에서 <b>FedAvg</b>나 <b>FedProx</b>보다 높은 정확도(약 91.2%)를 기록하며,
-데이터 다양성이 큰 분산 환경에서도 안정적인 학습 성능을 보인다.
-</p>
+[FedGCD]({{ '/research/FedGCD/' | relative_url }}) studies relationships among clients through community detection. [FedHyDRA]({{ '/research/FedHyDRA/' | relative_url }}) extends the research direction toward complementary distribution summaries and relation-aware embeddings.

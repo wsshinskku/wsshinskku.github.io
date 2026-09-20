@@ -1,0 +1,15 @@
+{% assign project = site.data.research.projects | where: 'id', page.research_id | first %}
+{% assign publication = site.data.publications | where: 'title', project.publication_title | first %}
+<div class="research-detail">
+  <a class="research-back" href="{{ '/research/' | relative_url }}">← All research</a>
+  <p class="research-detail__title">{{ project.publication_title }}</p>
+  <div class="research-detail__meta">
+    <span class="research-status research-status--{{ publication.status | slugify }}">{{ publication.status }}</span>
+    <span>{{ publication.venue }} · {{ publication.year }}</span>
+  </div>
+  <ul class="research-tags" aria-label="Research topics">
+    {% for tag in project.tags %}<li>{{ tag }}</li>{% endfor %}
+  </ul>
+  {% include research-links.html project=project publication=publication %}
+  {% if project.access == 'private' %}<p class="research-access-note">The repository is currently private; GitHub access requires authorization.</p>{% endif %}
+</div>

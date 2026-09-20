@@ -1,3 +1,7 @@
+{% if page.research_index or page.research_id %}
+<link rel="stylesheet" href="{{ '/assets/css/research.css' | relative_url }}">
+{% endif %}
+
 <!-- Force-load MathJax 3 for Minimal Mistakes -->
 <script>
   window.MathJax = {
