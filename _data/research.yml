@@ -33,7 +33,7 @@ projects:
     url: /research/FedHyDRA/
     publication_title: "Federated Learning with Dual-Scale Hybrid Divergence and Relation-Aware Embedding for Structured Non-IID Data"
     repository: https://github.com/wsshinskku/FedHyDRA
-    access: private
+    access: public
     summary: "Models structured client heterogeneity through complementary label and feature distribution summaries. Hybrid divergence, graph representation learning, and soft community memberships guide collaboration under partial participation."
     contribution: "Represent overlapping client relationships beyond a single measure of distribution mismatch."
     tags: ["Hybrid divergence", "Graph representation", "Soft membership"]
