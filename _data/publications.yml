@@ -102,7 +102,8 @@
   corresponding: Jitae Shin
   links:
     page: "#"
-    github: "#"
+    github: "https://github.com/wsshinskku/St-INTEL"
+    research: "/research/St-INTEL/"
 
 - title: "Transfer-enhanced Federated Learning with Dynamic Clustering for Traffic Management in 5G Open RAN"
   venue: "Computer Communications"

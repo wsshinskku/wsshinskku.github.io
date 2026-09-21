@@ -14,9 +14,9 @@ This site is built and deployed by `.github/workflows/pages.yml` when `main` is 
 - `_includes/research-*.html` renders shared cards, links, metadata, and manuscript records.
 - `assets/css/research.css` is loaded only for Research pages through `_includes/head/custom.html`.
 
-The Research catalog includes FedVar, FedGCD, FedHyDRA, CarPe-FL, TFL-CORAN, and Pandora. All six repositories are public. Keep each project's `access` value synchronized with its actual GitHub visibility. A manuscript's target venue and review status do not imply acceptance. Publication records can add `links.research` to link back to a research overview.
+The Research catalog includes FedVar, FedGCD, FedHyDRA, CarPe-FL, TFL-CORAN, Pandora, and St-INTEL. All seven repositories are public. Keep each project's `access` value synchronized with its actual GitHub visibility. A manuscript's target venue and review status do not imply acceptance. Publication records can add `links.research` to link back to a research overview.
 
-The public code in FedVar and FedGCD is presented as research prototypes. TFL-CORAN and Pandora describe their runnable reference environments and distinguish them from the original external simulator setups.
+The public code in FedVar and FedGCD is presented as research prototypes. TFL-CORAN, Pandora, and St-INTEL describe their runnable reference environments and distinguish them from the original external simulator setups.
 
 ## Licensing
 
