@@ -1,12 +1,16 @@
 {% assign project = site.data.research.projects | where: 'id', page.research_id | first %}
-{% assign publication = site.data.publications | where: 'title', project.publication_title | first %}
+{% assign publication = nil %}
+{% if project.publication_title %}{% assign publication = site.data.publications | where: 'title', project.publication_title | first %}{% endif %}
+{% assign research_title = project.research_title | default: project.publication_title %}
 <div class="research-detail">
   <a class="research-back" href="{{ '/research/' | relative_url }}">← All research</a>
-  <p class="research-detail__title">{{ project.publication_title }}</p>
+  {% if research_title %}<p class="research-detail__title">{{ research_title }}</p>{% endif %}
+  {% if publication.status or publication.venue or publication.year %}
   <div class="research-detail__meta">
-    <span class="research-status research-status--{{ publication.status | slugify }}">{{ publication.status }}</span>
-    <span>{{ publication.venue }} · {{ publication.year }}</span>
+    {% if publication.status %}<span class="research-status research-status--{{ publication.status | slugify }}">{{ publication.status }}</span>{% endif %}
+    {% if publication.venue or publication.year %}<span>{{ publication.venue }}{% if publication.venue and publication.year %} · {% endif %}{{ publication.year }}</span>{% endif %}
   </div>
+  {% endif %}
   <ul class="research-tags" aria-label="Research topics">
     {% for tag in project.tags %}<li>{{ tag }}</li>{% endfor %}
   </ul>

@@ -4,7 +4,7 @@ title: "Research"
 permalink: /research/
 classes: wide
 research_index: true
-excerpt: "Federated learning, medical imaging, and adaptive Open RAN research: St-INTEL, CarPe-FL, FedVar, FedGCD, FedHyDRA, TFL-CORAN, and Pandora."
+excerpt: "Federated learning, medical imaging, and adaptive network–edge research: NEXUS, St-INTEL, CarPe-FL, FedVar, FedGCD, FedHyDRA, TFL-CORAN, and Pandora."
 sidebar:
   nav: "main"
 ---

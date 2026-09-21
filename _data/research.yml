@@ -1,12 +1,23 @@
-# Status, venue and year come from publications.yml via publication_title.
+# Published/submitted work uses publication_title to resolve its existing publication metadata.
+# A research-only project uses research_title and has no publication metadata.
 groups:
   - id: open-ran
     title: "Learning and orchestration for Open RAN"
-    description: "From adapting UE policies to coordinating independently developed xApps."
+    description: "From adapting UE policies to coordinating network, edge, and xApp controllers."
   - id: federated-learning
     title: "Federated learning under heterogeneity"
     description: "From variation in client updates to graph-based and relation-aware collaboration."
 projects:
+  - id: nexus
+    name: NEXUS
+    group: open-ran
+    url: /research/NEXUS/
+    research_title: "Network–edge coordination through federated runtime contracts"
+    repository: https://github.com/wsshinskku/NEXUS
+    access: public
+    summary: "Mediates independent radio, routing, batching, and compute proposals against end-to-end service objectives. Personalized impact models screen actions; independent closed-loop tests validate complete versioned execution policies."
+    contribution: "Bind local execution authority to calibrated evidence, with bounded intervention and explicit invalidation."
+    tags: ["Runtime contracts", "Network–edge coordination", "Closed-loop calibration"]
   - id: pandora
     name: Pandora
     group: open-ran

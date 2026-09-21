@@ -1,12 +1,14 @@
 {% assign project = include.project %}
-{% assign publication = site.data.publications | where: 'title', project.publication_title | first %}
+{% assign publication = nil %}
+{% if project.publication_title %}{% assign publication = site.data.publications | where: 'title', project.publication_title | first %}{% endif %}
+{% assign research_title = project.research_title | default: project.publication_title %}
 <article class="research-card" aria-labelledby="project-{{ project.id }}">
   <div class="research-card__heading">
     <h3 id="project-{{ project.id }}"><a href="{{ project.url | relative_url }}">{{ project.name }}</a></h3>
     {% if publication.status %}<span class="research-status research-status--{{ publication.status | slugify }}">{{ publication.status }}</span>{% endif %}
   </div>
-  <p class="research-card__title">{{ project.publication_title }}</p>
-  <p class="research-card__venue">{{ publication.venue }}{% if publication.year %} · {{ publication.year }}{% endif %}</p>
+  {% if research_title %}<p class="research-card__title">{{ research_title }}</p>{% endif %}
+  {% if publication.venue or publication.year %}<p class="research-card__venue">{{ publication.venue }}{% if publication.venue and publication.year %} · {% endif %}{{ publication.year }}</p>{% endif %}
   <p class="research-card__summary">{{ project.summary }}</p>
   <p class="research-card__contribution"><span>Core idea</span> {{ project.contribution }}</p>
   <ul class="research-tags" aria-label="{{ project.name }} topics">
