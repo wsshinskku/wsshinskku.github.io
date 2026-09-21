@@ -7,16 +7,6 @@ groups:
     title: "Federated learning under heterogeneity"
     description: "From variation in client updates to graph-based and relation-aware collaboration."
 projects:
-  - id: st-intel
-    name: St-INTEL
-    group: open-ran
-    url: /research/St-INTEL/
-    publication_title: "St-INTEL: Stackelberg-Intent Enhanced Learning based Resource Allocation in 5G Open RAN"
-    repository: https://github.com/wsshinskku/St-INTEL
-    access: public
-    summary: "Connects intent-aware MILP benchmarks and scarcity prices to UE-local DDQN request policies. Federated updates share experience across heterogeneous users, while periodic and event-triggered optimization refreshes network guidance."
-    contribution: "Turn operator intent into slow-timescale guidance for fast, feasible request–grant control."
-    tags: ["Intent-aware allocation", "Shadow pricing", "Federated RL"]
   - id: pandora
     name: Pandora
     group: open-ran
@@ -27,6 +17,16 @@ projects:
     summary: "Coordinates resource, steering, and QoS xApps through site-personalized feasible action regions. Federated impact models and calibrated risk screening inform contracts; weighted projection minimally adjusts incompatible joint proposals."
     contribution: "Learn where xApps can operate together, while preserving their own policies."
     tags: ["xApp coordination", "Federated contracts", "Risk calibration"]
+  - id: st-intel
+    name: St-INTEL
+    group: open-ran
+    url: /research/St-INTEL/
+    publication_title: "St-INTEL: Stackelberg-Intent Enhanced Learning based Resource Allocation in 5G Open RAN"
+    repository: https://github.com/wsshinskku/St-INTEL
+    access: public
+    summary: "Connects intent-aware MILP benchmarks and scarcity prices to UE-local DDQN request policies. Federated updates share experience across heterogeneous users, while periodic and event-triggered optimization refreshes network guidance."
+    contribution: "Turn operator intent into slow-timescale guidance for fast, feasible request–grant control."
+    tags: ["Intent-aware allocation", "Shadow pricing", "Federated RL"]
   - id: tfl-coran
     name: TFL-CORAN
     group: open-ran
